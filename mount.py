@@ -5,3 +5,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 from google.colab import drive
+
+
+
+
+def feval(k):
