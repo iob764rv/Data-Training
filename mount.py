@@ -3,13 +3,14 @@ import pandas as pd
 import numpy as np
 import matplotlib
 import pickle
+
 import matplotlib.pyplot as plt
-
 from google.colab import drive
-
-
-
 import os from six.moves import urllib
+
+
+fn_dst = 'example_data_s1.pickle'
+
 
 
 
