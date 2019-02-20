@@ -9,6 +9,9 @@ from google.colab import drive
 
 
 
+import os from six.moves import urllib
+
+
 
 def feval(k):
   f = k[0]**2 + 2*k[0]*(k[1]**3)
