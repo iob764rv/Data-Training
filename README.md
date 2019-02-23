@@ -1,2 +1,2 @@
 # Data-Training
-Training a dataset in python files
+Training a dataset in python files, regression
