@@ -9,11 +9,15 @@ import os
 from six.moves import urllib
 
 
-fn_dst = 'example_data_s1.pickle'
 
 f1 = 'eeg_dat.p'
 with open(f1, 'rb') as f2:
     [X,Y] = pickle.load(f2)
+    
+fn_dst = 'example_data_s1.pickle'
+steps= X.shape
+
+
 
 
 def feval(k):
