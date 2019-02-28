@@ -22,3 +22,5 @@ def feval(k):
 #new data
 nx = 200
 x = np.linspace(0,30,nx)
+y0 = x*np.exp(-0.3*x)
+y = y0 + np.random.normal(0,0.05,nx)
