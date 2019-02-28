@@ -18,3 +18,7 @@ steps= X.shape
 
 def feval(k):
   f = k[0]**2 + 2*k[0]*(k[1]**3)
+
+#new data
+nx = 200
+x = np.linspace(0,30,nx)
