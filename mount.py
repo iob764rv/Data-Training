@@ -31,3 +31,5 @@ regr.fit(Xtr,Ytr)
 
 o = regr.predict(Xtr)
 rsq_tr = r2_score(tr, o)
+
+o = regr.predict(Xts)
