@@ -30,3 +30,4 @@ regr = Ridge(alpha=1)
 regr.fit(Xtr,Ytr)
 
 o = regr.predict(Xtr)
+rsq_tr = r2_score(tr, o)
