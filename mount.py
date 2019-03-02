@@ -27,3 +27,6 @@ plt.plot(x,y0, linewidth=3)
 plt.plot(x,y,'o')
 
 regr = Ridge(alpha=1)
+regr.fit(Xtr,Ytr)
+
+o = regr.predict(Xtr)
