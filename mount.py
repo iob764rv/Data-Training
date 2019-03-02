@@ -15,7 +15,6 @@ with open(f1, 'rb') as f2:
 fn_dst = 'example_data_s1.pickle'
 steps= X.shape
 
-
 def feval(k):
   f = k[0]**2 + 2*k[0]*(k[1]**3)
 
