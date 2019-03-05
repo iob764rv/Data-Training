@@ -33,3 +33,4 @@ o = regr.predict(Xtr)
 rsq_tr = r2_score(tr, o)
 
 o = regr.predict(Xts)
+rsq = r2_score(yts, or
