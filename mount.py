@@ -33,7 +33,6 @@ o = regr.predict(Xtr)
 rsq_tr = r2_score(tr, o)
 
 o = regr.predict(Xts)
-
                
 plt.figure(figsize=(10,5))
 for i in range(nout):
