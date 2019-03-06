@@ -39,3 +39,7 @@ plt.figure(figsize=(10,5))
 for i in range(nout):
 #sum_{k=0}^d  \sum_{j=0}^{p-1} \sum_{m=0}^d X[i+m,j]*W[j,m,k] + b[k]
 o= regr.predict(Xts)
+
+nt, nneuron = X.shape
+nout = y.shape[1]
+ttotal = nt*tsamp
