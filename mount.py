@@ -33,7 +33,7 @@ o = regr.predict(Xtr)
 rsq_tr = r2_score(tr, o)
 
 o = regr.predict(Xts)
-rsq = r2_score(yts, or
+rsq = r2_score(yts, or)
                
 plt.figure(figsize=(10,5))
 for i in range(nout):
@@ -43,3 +43,4 @@ o= regr.predict(Xts)
 nt, nneuron = X.shape
 nout = y.shape[1]
 ttotal = nt*tsamp
+Xtr, Xts, ytr, yts = train_test_split(X, y, test_size=0.33)
