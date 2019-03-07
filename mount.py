@@ -37,7 +37,8 @@ o = regr.predict(Xts)
 plt.figure(figsize=(10,5))
 for i in range(nout):
 #sum_{k=0}^d  \sum_{j=0}^{p-1} \sum_{m=0}^d X[i+m,j]*W[j,m,k] + b[k]
-o= regr.predict(Xts)
+    o= regr.predict(Xts)
+    plt.subplot(1,nout,i+1)
 
 nt, nneuron = X.shape
 nout = y.shape[1]
@@ -46,7 +47,7 @@ Xtr, Xts, ytr, yts = train_test_split(X, y, test_size=0.33)
 rsq = r2_score(yts, or)
 
 for i in range(nout):
-    plt.subplot(1,nout,i+1)
+    
     
 def create_data(X,y,dly):
     #delayed data
