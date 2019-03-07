@@ -23,8 +23,8 @@ nx = 200
 x = np.linspace(0,30,nx)
 y0 = x*np.exp(-0.3*x)
 y = y0 + np.random.normal(0,0.05,nx)
-plt.plot(x,y0, linewidth=3)
-plt.plot(x,y,'o')
+#plt.plot(x,y0, linewidth=3)
+#plt.plot(x,y,'o')
 
 regr = Ridge(alpha=1)
 regr.fit(Xtr,Ytr)
