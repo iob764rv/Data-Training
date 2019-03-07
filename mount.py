@@ -44,3 +44,6 @@ nout = y.shape[1]
 ttotal = nt*tsamp
 Xtr, Xts, ytr, yts = train_test_split(X, y, test_size=0.33)
 rsq = r2_score(yts, or)
+
+for i in range(nout):
+    plt.subplot(1,nout,i+1)
