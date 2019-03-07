@@ -51,3 +51,4 @@ for i in range(nout):
 def create_data(X,y,dly):
     #delayed data
     n,p = X.shape
+    Xdly = np.zeros((n-dly,(dly+1)*p))
