@@ -47,3 +47,7 @@ rsq = r2_score(yts, or)
 
 for i in range(nout):
     plt.subplot(1,nout,i+1)
+    
+def create_data(X,y,dly):
+    #delayed data
+    n,p = X.shape
