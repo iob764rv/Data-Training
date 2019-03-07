@@ -48,5 +48,6 @@ rsq = r2_score(yts, or)
     
 def create_data(X,y,dly):
     #delayed data
+    dly = 6
     n,p = X.shape
     Xdly = np.zeros((n-dly,(dly+1)*p))
