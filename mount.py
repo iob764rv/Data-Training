@@ -51,3 +51,5 @@ def create_data(X,y,dly):
     dly = 6
     n,p = X.shape
     Xdly = np.zeros((n-dly,(dly+1)*p))
+    return dly
+
