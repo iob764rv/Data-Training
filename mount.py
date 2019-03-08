@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from google.colab import drive
 import os 
 from six.moves import urllib
+from tqdm import tqdm_notebook
 
 f1 = 'eeg_dat.p'
 with open(f1, 'rb') as f2:
