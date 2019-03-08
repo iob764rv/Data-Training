@@ -45,11 +45,12 @@ nout = y.shape[1]
 ttotal = nt*tsamp
 Xtr, Xts, ytr, yts = train_test_split(X, y, test_size=0.33)
 rsq = r2_score(yts, or)
-    
+print(rsq)
 def create_data(X,y,dly):
     #delayed data
     dly = 6
     n,p = X.shape
     Xdly = np.zeros((n-dly,(dly+1)*p))
+    
     return dly
 
