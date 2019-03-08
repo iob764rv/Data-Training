@@ -58,3 +58,7 @@ def create_data(X,y,dly):
 nred = 6000
 Xr = X[:nr]
 yr = y[:nr]
+
+dmax = 15
+
+# 
