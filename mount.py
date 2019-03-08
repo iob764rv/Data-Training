@@ -62,3 +62,4 @@ yr = y[:nr]
 dmax = 15
 
 # 
+Xdly, ydly = create_data(Xr,yr,dmax)
