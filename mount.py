@@ -77,3 +77,6 @@ rsq = r2_score(yts, yhat)
 nred = 6000
 Xrr = X[:nrr]
 yrr = y[:nrr]
+
+dmax = 15
+Xdly, ydly = create_dly_data(Xrr,yrr,dmax)
