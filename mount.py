@@ -73,3 +73,6 @@ regr.fit(Xtr,ytr)
 #measure r2score
 yh = regr.predict(Xts)
 rsq = r2_score(yts, yhat)
+
+Xrr = X[:nrr]
+yrr = y[:nrr]
