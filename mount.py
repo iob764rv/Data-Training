@@ -74,5 +74,6 @@ regr.fit(Xtr,ytr)
 yh = regr.predict(Xts)
 rsq = r2_score(yts, yhat)
 
+nred = 6000
 Xrr = X[:nrr]
 yrr = y[:nrr]
