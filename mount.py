@@ -68,3 +68,4 @@ Xdly, ydly = create_data(Xr,yr,dmax)
 Xtrain, Xts, ytrain, yts = train_test_split(Xdly, ydly, test_size=0.33)
 #create object
 regr = LinearRegression()
+regr.fit(Xtr,ytr)
