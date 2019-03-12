@@ -70,3 +70,4 @@ Xtrain, Xts, ytrain, yts = train_test_split(Xdly, ydly, test_size=0.33)
 regr = LinearRegression()
 #fit model
 regr.fit(Xtr,ytr)
+#measure r2score
