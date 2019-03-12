@@ -80,3 +80,5 @@ yrr = y[:nrr]
 
 dmax = 15
 Xdly, ydly = create_dly_data(Xrr,yrr,dmax)
+
+#nfold=5 
