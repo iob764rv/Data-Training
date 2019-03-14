@@ -95,3 +95,6 @@ Rsq = np.zeros((nd,nfold))
 Rss = np.zeros((nd,nfold))
 
 
+pbar = tqdm_notebook(
+    total=nfold*nd, initial=0,
+    unit='folds', unit_divisor=nd, desc='Model order test')
