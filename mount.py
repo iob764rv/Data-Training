@@ -86,5 +86,8 @@ Xdly, ydly = create_dly_data(Xrr,yrr,dmax)
 
 nfold = 5
 kf = sklearn.model_selection.KFold(n_splits=nfold,shuffle=True)
+# nd = len(dtest)
+dtest = np.arange(dmax+1)
+nd = len(dtest)
 
 
