@@ -90,7 +90,7 @@ kf = sklearn.model_selection.KFold(n_splits=nfold,shuffle=True)
 dtest = np.arange(dmax+1)
 nd = len(dtest)
 
-# I have also created an RSS matrix
+#  RSS matrix
 Rsq = np.zeros((nd,nfold))
 Rss = np.zeros((nd,nfold))
 
