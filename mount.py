@@ -83,3 +83,8 @@ Xdly, ydly = create_dly_data(Xrr,yrr,dmax)
 
 #nfold=5 
 #testmax = [0,1,...,dmax]
+
+nfold = 5
+kf = sklearn.model_selection.KFold(n_splits=nfold,shuffle=True)
+
+
