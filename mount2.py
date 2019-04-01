@@ -6,3 +6,4 @@ from sklearn import linear_model, preprocessing
 
 df = pd.read('files')
 df.head()
+xname=
