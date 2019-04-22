@@ -11,6 +11,7 @@ a = np.array([1,0,-2,0.5,0])
 w = np.linspace(-1.5,1.5,100)
 ystr= df['gene'].values
 v1=np.unique(ystrm return_inverse=True)
+xn=df.columns[:-4]
 
 
 def grad_opt_adapt(eval, winit, nit=1000, lr_init=1e-3):
