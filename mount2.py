@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn import linear_model, preprocessing
 from sklearn.linear_model import LinearRegression
 
+
 df = pd.read('files')
 df.head()
 #xname=
