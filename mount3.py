@@ -7,6 +7,8 @@ import pandas as pd
 import np as np
 import matplotlib
 import matplotlib.pyplot as plt
+from sklearn import linear_model, preprocessing
+
 
 
 def download_from_url(url, dst):
