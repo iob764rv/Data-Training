@@ -6,7 +6,7 @@ import os
 import pandas as pd
 import np as np
 import matplotlib
-importmatplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 def download_from_url(url, dst):
