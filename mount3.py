@@ -10,5 +10,6 @@ import matplotlib.pyplot as plt
 from sklearn import linear_model, preprocessing
 
 
+df_ex= df.fillna(df.mean())
 
 def download_from_url(url, dst):
