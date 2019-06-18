@@ -18,3 +18,5 @@ xn=df1.columns[:-4]
 X=np.array(df1[xn].values)
 Xs= preprocessing.scale(X)
 
+logreg= linear_model.LogisticRegression(C=1e5)
+logreg.fit(Sx,y)
