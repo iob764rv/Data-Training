@@ -12,5 +12,9 @@ from sklearn import linear_model, preprocessing
 
 df_ex= df.fillna(df.mean())
 ystr= df1['type'].values
+vals, y= np.unique(ystr, return_values=True)
+
+xn=df1.columns[:-4]
+X=np.array(df1[xn].values)
 
 def download_from_url(url, dst):
