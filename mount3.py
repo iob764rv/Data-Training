@@ -21,3 +21,5 @@ Xs= preprocessing.scale(X)
 logreg= linear_model.LogisticRegression(C=1e5)
 logreg.fit(Sx,y)
 yhat = logreg.predict(Xs)
+accu= np.mean(yhat==y)
+
