@@ -26,3 +26,5 @@ accu= np.mean(yhat==y)
 logregcoef= logreg.coef_
 logregcoef=logregcoef.ravel()
 plt.stem(logregcoef)
+
+ind= np.argsort(np.abs(logregcoef))
