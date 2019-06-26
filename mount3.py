@@ -23,3 +23,6 @@ logreg.fit(Sx,y)
 yhat = logreg.predict(Xs)
 accu= np.mean(yhat==y)
 
+logregcoef= logreg.coef_
+logregcoef=logregcoef.ravel()
+plt.stem(logregcoef)
