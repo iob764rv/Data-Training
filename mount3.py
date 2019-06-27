@@ -28,4 +28,5 @@ logregcoef=logregcoef.ravel()
 plt.stem(logregcoef)
 
 ind= np.argsort(np.abs(logregcoef))
+i1=ind[-1]
 
