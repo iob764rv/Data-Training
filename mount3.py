@@ -29,4 +29,6 @@ plt.stem(logregcoef)
 
 ind= np.argsort(np.abs(logregcoef))
 i1=ind[-1]
-
+i2=ind[-2]
+i3=ind[-3]
+i4=ind[-4]
