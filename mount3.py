@@ -8,7 +8,7 @@ import np as np
 import matplotlib
 import matplotlib.pyplot as plt
 from sklearn import linear_model, preprocessing
-from sklear.model_selection import KFold
+from sklearn.model_selection import KFold
 
 
 df_ex= df.fillna(df.mean())
