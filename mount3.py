@@ -36,3 +36,5 @@ i3=ind[-3]
 i4=ind[-4]
 
 kfold=KFold(split=nfold, shuffle=True)
+precision=[]
+recall=[]
