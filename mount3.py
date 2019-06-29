@@ -9,6 +9,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from sklearn import linear_model, preprocessing
 from sklearn.model_selection import KFold
+from sklearn.metrics import precision_recall_fscore_support
 
 
 df_ex= df.fillna(df.mean())
@@ -34,3 +35,4 @@ i2=ind[-2]
 i3=ind[-3]
 i4=ind[-4]
 
+kfold=KFold(split=nfold, shuffle=True)
