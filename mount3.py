@@ -40,3 +40,5 @@ i4=ind[-4]
 kfold=KFold(split=nfold, shuffle=True)
 precision=[]
 recall=[]
+
+logistic= linear_model.LogisticRegression()
