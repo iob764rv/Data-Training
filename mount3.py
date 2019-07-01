@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 from sklearn import linear_model, preprocessing
 from sklearn.model_selection import KFold
 from sklearn.metrics import precision_recall_fscore_support
+from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import KFold
 
 
 df_ex= df.fillna(df.mean())
