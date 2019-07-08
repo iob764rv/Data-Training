@@ -47,3 +47,6 @@ logistic= linear_model.LogisticRegression()
  folds=10
 ##
 kfolds=KFold(n_splits=folds, shuffle= True)
+##looping
+
+#for
