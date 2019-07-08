@@ -49,4 +49,4 @@ logistic= linear_model.LogisticRegression()
 kfolds=KFold(n_splits=folds, shuffle= True)
 ##looping
 
-#for
+#for ii. Ind in enumerate():
