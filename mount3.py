@@ -55,3 +55,5 @@ rate=[]
 #for ii, Ii in kfolds.split(Xs)
  # X=Xs[ii,:]
  #tr=r[]
+#logreg.fit(X,r)
+#
