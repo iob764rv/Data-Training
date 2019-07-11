@@ -52,4 +52,5 @@ re=[]
 rate=[]
 ##looping
 
-#for ii. Ind in enumerate():
+#for ii, Ii in kfolds.split(Xs)
+ #
