@@ -53,4 +53,5 @@ rate=[]
 ##looping
 
 #for ii, Ii in kfolds.split(Xs)
- #
+ # X=Xs[ii,:]
+ #tr=r[]
