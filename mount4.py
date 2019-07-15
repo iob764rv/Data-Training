@@ -9,3 +9,12 @@ from sklearn.metrics import r2_scor
  from tqdm import tqdm, tqdm_notebook 
  from urllib.request import urlopen 
  import os
+ 
+ 
+ def load_from_url(url, dst):
+  file_size = int(urlopen(url).info().get('Content-Length', -1)) 
+  return file_size
+  
+  
+
+ 
