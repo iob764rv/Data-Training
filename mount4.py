@@ -18,4 +18,6 @@ from sklearn.metrics import r2_scor
   
   
 
- 
+ tsamp = 0.05
+ # nt = ... 
+ # nneuron
