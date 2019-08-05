@@ -30,3 +30,7 @@ from sklearn.metrics import r2_scor
 
  # regression object 
  regr = LinearRegression()
+ 
+ # Fit model 
+ regr.fit(Xtr,ytr)
+ 
