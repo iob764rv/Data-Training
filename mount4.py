@@ -27,3 +27,6 @@ from sklearn.metrics import r2_scor
  ttotal = nt*tsamp
 
  Xtr, Xts, ytr, yts = train_test_split(X, y, test_size=0.33)
+
+ # regression object 
+ regr = LinearRegression()
