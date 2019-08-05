@@ -25,3 +25,5 @@ from sklearn.metrics import r2_scor
  nt, nneuron = X.shape 
  nout = y.shape[1] 
  ttotal = nt*tsamp
+
+ Xtr, Xts, ytr, yts = train_test_split(X, y, test_size=0.33)
