@@ -107,3 +107,8 @@ iPad4,9	iPad Mini 3 (China)
 iPad5,1	iPad mini 4 (WiFi)
 iPad5,2	4th Gen iPad mini (WiFi+Cellular)
 iPad5,3	iPad Air 2 (WiFi)
+
+iPad5,4	iPad Air 2 (Cellular)
+iPad6,3	iPad Pro (9.7 inch, WiFi)
+iPad6,4	iPad Pro (9.7 inch, WiFi+LTE)
+iPad6,7	iPad Pro (12.9 inch, WiFi)
