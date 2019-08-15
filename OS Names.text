@@ -35,15 +35,6 @@ iPhone11,4	iPhone XS Max
 iPhone11,6	iPhone XS Max Global
 iPhone11,8	iPhone XR
 
-iPod1,1	1st Gen iPod
-iPod2,1	2nd Gen iPod
-iPod3,1	3rd Gen iPod
-iPod4,1	4th Gen iPod
-iPod5,1	5th Gen iPod
-iPod7,1	6th Gen iPod
-
-
-
 iPhone7,2	iPhone 6
 iPhone8,1	iPhone 6s
 
@@ -68,16 +59,15 @@ iPhone11,2	iPhone XS
 iPhone11,4	iPhone XS Max
 iPhone11,6	iPhone XS Max Global
 iPhone11,8	iPhone XR
-	
+
 iPod1,1	1st Gen iPod
 iPod2,1	2nd Gen iPod
 iPod3,1	3rd Gen iPod
 
-
 iPod4,1	4th Gen iPod
 iPod5,1	5th Gen iPod
 iPod7,1	6th Gen iPod
-	
+
 iPad1,1	iPad
 iPad1,2	iPad 3G
 iPad2,1	2nd Gen iPad
