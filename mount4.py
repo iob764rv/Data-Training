@@ -34,3 +34,5 @@ from sklearn.metrics import r2_scor
  # Fit model 
  regr.fit(Xtr,ytr)
  
+#predict
+h = regr.predict(Xts)
