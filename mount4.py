@@ -36,3 +36,5 @@ from sklearn.metrics import r2_scor
  
 #predict
 h = regr.predict(Xts)
+rsq = r2_score(yts, h) 
+print(rsq)
