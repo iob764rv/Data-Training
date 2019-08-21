@@ -40,3 +40,4 @@ rsq = r2_score(yts, h)
 print(rsq)
 
 #for i in range(nout):
+#plt.subplot(1,nout,i+1)
