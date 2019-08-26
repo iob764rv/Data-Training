@@ -43,4 +43,4 @@ for i in range(nout):
  plt.subplot(1,nout,i+1)
  plt.plot(yts[:,i],yhat[:,i],'o') 
  plt.grid() plt.xlabel('True') 
-#plt.ylabel('Predicted')
+ plt.ylabel('Predicted')
