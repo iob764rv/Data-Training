@@ -44,3 +44,5 @@ for i in range(nout):
  plt.plot(yts[:,i],yhat[:,i],'o') 
  plt.grid() plt.xlabel('True') 
  plt.ylabel('Predicted')
+ 
+ #= \sum_{j=0}^{p-1} X[i,j]*w[j,k] + b[k]
