@@ -46,3 +46,6 @@ for i in range(nout):
  plt.ylabel('Predicted')
  
  #= \sum_{j=0}^{p-1} X[i,j]*w[j,k] + b[k]
+ n,p = X.shape 
+ #Xdly = np.zeros((n-dly,(dly+1)*p)) 
+ #for i in range(dly+1):
