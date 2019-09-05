@@ -55,5 +55,6 @@ for i in range(nout):
 dly = 6 Xdly, ydly = create_dly_data(X,y,dly)
 # training and test
 Xtr, Xts, ytr, yts = train_test_split(Xdly, ydly, test_size=0.33)
-# Create linear regression object regr = LinearRegression()
-# Fit the model regr.fit(Xtr,ytr)
+# linear regression object
+regr = LinearRegression()
+# Fit model regr.fit(Xtr,ytr)
