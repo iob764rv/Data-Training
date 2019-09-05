@@ -58,3 +58,4 @@ Xtr, Xts, ytr, yts = train_test_split(Xdly, ydly, test_size=0.33)
 # linear regression object
 regr = LinearRegression()
 # Fit model regr.fit(Xtr,ytr)
+#Measure the new r^2 score yhat = regr.predict(Xts) rsq = r2_score(yts, yhat) print(rsq)
