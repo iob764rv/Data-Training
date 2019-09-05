@@ -49,3 +49,5 @@ for i in range(nout):
  n,p = X.shape 
  Xdly = np.zeros((n-dly,(dly+1)*p)) 
  #for i in range(dly+1):
+#Xdly[:,i*p:(i+1)*p] = X[dly-i:n-i,:] ydly = y[dly:]
+#return Xdly, ydly
