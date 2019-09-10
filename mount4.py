@@ -71,3 +71,5 @@ for i in range(nout):
            plt.grid() 
            plt.xlabel('True') 
            plt.ylabel('Predicted')           
+nred = 6000
+# TODO # Xred = ... # yred = ... Xred = X[:nred] yred = y[:nred]
