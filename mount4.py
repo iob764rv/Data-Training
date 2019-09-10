@@ -73,3 +73,5 @@ for i in range(nout):
            plt.ylabel('Predicted')           
 nred = 6000
 # TODO # Xred = ... # yred = ... Xred = X[:nred] yred = y[:nred]
+dmax = 15
+# TODO # Xdly, ydly = ... Xdly, ydly = create_dly_data(Xred,yred,dmax)
