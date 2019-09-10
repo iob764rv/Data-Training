@@ -77,7 +77,7 @@ nred = 6000
 Xred = X[:nred] 
 yred = y[:nred]
 dmax = 15
-# Xdly, ydly = ... Xdly, ydly = create_dly_data(Xred,yred,dmax)
+
 
 for it, d in enumerate(dtest): 
 # Xdly1 = Xdly with the columns corresponding to only the `d+1` most recent times. Xdly1 = Xdly[:,:(d+1)*nneuron]
