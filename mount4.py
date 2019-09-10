@@ -64,7 +64,7 @@ rsq = r2_score(yts, yhat)
 print(rsq)
 plt.figure(figsize=(10,5)
 
-#for i in range(nout): 
+for i in range(nout): 
            plt.subplot(1,nout,i+1) 
            plt.plot(yts[:,i],yhat[:,i],'o') 
            
