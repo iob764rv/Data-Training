@@ -80,5 +80,5 @@ dmax = 15
 # Xdly, ydly = ... Xdly, ydly = create_dly_data(Xred,yred,dmax)
 
 for it, d in enumerate(dtest): 
-# TODO: # Xdly1 = Xdly with the columns corresponding to only the `d+1` most recent times. Xdly1 = Xdly[:,:(d+1)*nneuron]
+# Xdly1 = Xdly with the columns corresponding to only the `d+1` most recent times. Xdly1 = Xdly[:,:(d+1)*nneuron]
 # TODO # Split the data (Xdly1,ydly) into training and test # Xtr = ... # ytr = ... # Xts = ... # yts = ... Xtr = Xdly1[Itr,:] ytr = ydly[Itr] Xts = Xdly1[Its,:] yts = ydly[Its]
