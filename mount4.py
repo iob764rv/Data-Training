@@ -16,7 +16,6 @@ from sklearn.metrics import r2_scor
   file_size = int(urlopen(url).info().get('Content-Length', -1)) 
   return file_size
   
-  
 
  tsamp = 0.05
  # nt = ... 
