@@ -49,7 +49,7 @@ for i in range(nout):
  Xdly = np.zeros((n-dly,(dly+1)*p)) 
  for i in range(dly+1):
   Xdly[:,i*p:(i+1)*p] = X[dly-i:n-i,:] ydly = y[dly:]
-#return Xdly, ydly
+return Xdly, ydly
 
 dly = 6 Xdly, ydly = create_dly_data(X,y,dly)
 # training and test
