@@ -47,7 +47,7 @@ for i in range(nout):
  ##= \sum_{j=0}^{p-1} X[i,j]*w[j,k] + b[k]
  n,p = X.shape 
  Xdly = np.zeros((n-dly,(dly+1)*p)) 
- #for i in range(dly+1):
+ for i in range(dly+1):
 #Xdly[:,i*p:(i+1)*p] = X[dly-i:n-i,:] ydly = y[dly:]
 #return Xdly, ydly
 
