@@ -83,5 +83,6 @@ for it, d in enumerate(dtest):
  Xdly1 = Xdly[:,:(d+1)*nneuron]
 # TODO # Split the data (Xdly1,ydly) into training and test # Xtr = ...
 # ytr = ... # Xts = ... # yts = ... 
-Xtr = Xdly1[Itr,:] ytr = ydly[Itr] Xts = Xdly1[Its,:] 
+Xtr = Xdly1[Itr,:] 
+ytr = ydly[Itr] Xts = Xdly1[Its,:] 
 yts = ydly[Its]
