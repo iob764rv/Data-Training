@@ -84,5 +84,7 @@ for it, d in enumerate(dtest):
 # TODO # Split the data (Xdly1,ydly) into training and test # Xtr = ...
 # ytr = ... # Xts = ... # yts = ... 
 Xtr = Xdly1[Itr,:] 
-ytr = ydly[Itr] Xts = Xdly1[Its,:] 
+ytr = ydly[Itr] 
+           
+Xts = Xdly1[Its,:] 
 yts = ydly[Its]
