@@ -95,7 +95,8 @@ nfold = 5
            kf = sklearn.model_selection.KFold(n_splits=nfold,shuffle=True)
 # TODO: Model orders to be tested # 
            dtest = vector [0,1,...,dmax]
-           nd = len(dtest) dtest = np.arange(dmax+1) nd = len(dtest)
+           nd = len(dtest) dtest = np.arange(dmax+1) 
+           nd = len(dtest)
 # TODO. # Initialize a matrix Rsq to hold values of the R^2 across the model orders and folds. # I have also created an RSS matrix 
            Rsq = np.zeros((nd,nfold)) Rss = np.zeros((nd,nfold))
 # Create a progress bar. Note there are nd*nfold total fits. pbar = tqdm_notebook( total=nfold*nd, initial=0, unit='folds', unit_divisor=nd, desc='Model order test')
