@@ -99,4 +99,5 @@ nfold = 5
            nd = len(dtest)
 # TODO. # Initialize a matrix Rsq to hold values of the R^2 across the model orders and folds. # I have also created an RSS matrix 
            Rsq = np.zeros((nd,nfold)) Rss = np.zeros((nd,nfold))
-# Create a progress bar. Note there are nd*nfold total fits. pbar = tqdm_notebook( total=nfold*nd, initial=0, unit='folds', unit_divisor=nd, desc='Model order test')
+# Create a progress bar. Note there are nd*nfold total fits. 
+           pbar = tqdm_notebook( total=nfold*nd, initial=0, unit='folds', unit_divisor=nd, desc='Model order test')
