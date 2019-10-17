@@ -102,3 +102,6 @@ nfold = 5
 # Create a progress bar. Note there are nd*nfold total fits. 
            pbar = tqdm_notebook( total=nfold*nd, initial=0, unit='folds', unit_divisor=nd, desc='Model order test')
 
+
+for it, d in enumerate(dtest): 
+ Xdly1 = Xdly[:,:(d+1)*nneuron]
