@@ -101,10 +101,4 @@ nfold = 5
            Rsq = np.zeros((nd,nfold)) Rss = np.zeros((nd,nfold))
 # Create a progress bar. Note there are nd*nfold total fits. 
            pbar = tqdm_notebook( total=nfold*nd, initial=0, unit='folds', unit_divisor=nd, desc='Model order test')
-           
- # TODO: Model orders to be tested 
-# dtest = vector [0,1,...,dmax] 
-           # nd = len(dtest) 
-dtest = np.arange(dmax+1) 
-nd = len(dtest)
-           
+
