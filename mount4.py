@@ -105,3 +105,6 @@ nfold = 5
 
 for it, d in enumerate(dtest): 
  Xdly1 = Xdly[:,:(d+1)*nneuron]
+ Xtr = Xdly1[Itr,:] 
+           ytr = ydly[Itr] 
+           Xts = Xdly1[Its,:] yts = ydly[Its]
