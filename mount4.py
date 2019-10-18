@@ -106,7 +106,8 @@ nfold = 5
 for it, d in enumerate(dtest): 
  Xdly1 = Xdly[:,:(d+1)*nneuron]
  Xtr = Xdly1[Itr,:] 
-           ytr = ydly[Itr]
-           Rsq yhat = regr.predict(Xts) 
-Rsq[it,isplit] = r2_score(yts, yhat) 
-           Xts = Xdly1[Its,:] yts = ydly[Its]
+ ytr = ydly[Itr]
+ 
+ Rsq yhat = regr.predict(Xts) 
+ Rsq[it,isplit] = r2_score(yts, yhat) 
+ Xts = Xdly1[Its,:] yts = ydly[Its]
