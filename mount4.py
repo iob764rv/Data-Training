@@ -111,3 +111,6 @@ for it, d in enumerate(dtest):
  Rsq yhat = regr.predict(Xts) 
  Rsq[it,isplit] = r2_score(yts, yhat) 
  Xts = Xdly1[Its,:] yts = ydly[Its]
+           
+Rss[it,isplit] = np.mean((yts-yhat)**2)
+pbar.update(1) pbar.close()
