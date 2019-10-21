@@ -116,3 +116,6 @@ HBox(children=(IntProgress(value=0, description='Model order test', max=80, styl
            
 Rss[it,isplit] = np.mean((yts-yhat)**2)
 pbar.update(1) pbar.close()
+
+                                                                                                 rsq_mean = np.mean(Rsq,axis=1) 
+rsq_se = np.std(Rsq,axis=1)/np.sqrt(nfold-1)
