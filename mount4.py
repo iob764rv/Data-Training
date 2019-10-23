@@ -119,3 +119,7 @@ pbar.update(1) pbar.close()
 rsq_mean = np.mean(Rsq,axis=1) 
 rsq_se = np.std(Rsq,axis=1)/np.sqrt(nfold-1)
 rss_mean = np.mean(Rss,axis=1) 
+
+                                                                                                rss_se = np.std(Rss,axis=1)/np.sqrt(nfold-1)
+plt.figure(figsize=(12,5)) 
+plt.subplot(1,2,1) 
