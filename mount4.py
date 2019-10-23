@@ -123,5 +123,6 @@ rss_mean = np.mean(Rss,axis=1)
                                                                                                 rss_se = np.std(Rss,axis=1)/np.sqrt(nfold-1)
 plt.figure(figsize=(12,5)) plt.errorbar(dtest, rsq_mean, rsq_se)
 plt.subplot(1,2,1) 
-
+plt.grid() 
+plt.xlabel('Model order c') 
                                                                             
