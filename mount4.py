@@ -127,3 +127,6 @@ plt.grid()
 plt.xlabel('Model order c') 
                                                                                                 
 plt.ylabel('Test R^2')                                                                         
+
+plt.subplot(1,2,2) 
+plt.errorbar(dtest, rss_mean, rss_se)                                                                                           
