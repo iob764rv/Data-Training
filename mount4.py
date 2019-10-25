@@ -125,4 +125,5 @@ plt.figure(figsize=(12,5)) plt.errorbar(dtest, rsq_mean, rsq_se)
 plt.subplot(1,2,1) 
 plt.grid() 
 plt.xlabel('Model order c') 
-                                                                            
+                                                                                                
+plt.ylabel('Test R^2')                                                                         
