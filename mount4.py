@@ -139,4 +139,7 @@ dopt = dtest[iopt] print('Optimal model order with normal rule = %d' % dopt)
 print('R^2 = %f' % rsq_mean[iopt])
                                                                                                
 rsq_tgt = rsq_mean[iopt] - rsq_se[iopt] 
-I = np.where(rsq_mean >= rsq_tgt)[0] 
+I = np.where(rsq_mean >= rsq_tgt)[0]
+iopt_one_se = I[0] 
+
+                                                                                                
