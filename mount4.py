@@ -131,4 +131,10 @@ plt.ylabel('Test R^2')
 plt.subplot(1,2,2) 
 plt.errorbar(dtest, rss_mean, rss_se) 
 plt.grid() 
-plt.xlabel('Model order d')                                                                                           
+plt.xlabel('Model order d')
+plt.ylabel('Test RSS') 
+iopt = np.argmax(rsq_mean)
+
+dopt = dtest[iopt] print('Optimal model order with normal rule = %d' % dopt) 
+print('R^2 = %f' % rsq_mean[iopt])
+                                                                                               
