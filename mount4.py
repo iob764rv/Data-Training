@@ -141,6 +141,9 @@ print('R^2 = %f' % rsq_mean[iopt])
 rsq_tgt = rsq_mean[iopt] - rsq_se[iopt] 
 I = np.where(rsq_mean >= rsq_tgt)[0]
 iopt_one_se = I[0]
-dopt_one_se = dtest[iopt_one_se] 
+dopt_one_se = dtest[iopt_one_se]
+
+
+print('Optimal model order with one SE rule = %d' % dopt_one_se)  
 
                                                                                                 
