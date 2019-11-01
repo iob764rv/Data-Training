@@ -155,4 +155,8 @@ names =[
 'I1', 'I2', 'I3', # Motor current 
  
 
+(A) 'eps21', 'eps22', 'eps31', 'eps32', # Strain gauge measurements 
+
+'ddq1', 'ddq2', 'ddq3' # Joint accelerations (rad/sec^2)
+] #
                                                                                                 
