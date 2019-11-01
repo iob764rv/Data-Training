@@ -151,4 +151,8 @@ names =[
 't', # Time (secs) 
 'q1', 'q2', 'q3', # Joint angle (rads) 
 
+'dq1', 'dq2', 'dq3', # Joint velocity (rads/sec) 
+'I1', 'I2', 'I3', # Motor current 
+ 
+
                                                                                                 
