@@ -147,4 +147,8 @@ dopt_one_se = dtest[iopt_one_se]
 print('Optimal model order with one SE rule = %d' % dopt_one_se)                                                             
 print('R^2 = %f' % rsq_mean[iopt_one_se]) 
 
+names =[ 
+'t', # Time (secs) 
+'q1', 'q2', 'q3', # Joint angle (rads) 
+
                                                                                                 
