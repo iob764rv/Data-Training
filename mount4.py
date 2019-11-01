@@ -159,4 +159,8 @@ names =[
 
 'ddq1', 'ddq2', 'ddq3' # Joint accelerations (rad/sec^2)
 ] #
+
+df = pd.read_csv('exp1.csv', header=None,sep=',',names=names, index_col=0)
+                                                                                                
+                                                                                                
                                                                                                 
