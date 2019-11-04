@@ -9,3 +9,5 @@ plt.plot(t,y)
 plt.grid()
 
 ytrain = np.array(df['I2']) 
+Xtrain = np.array(df[['q2','dq2','eps21', 'eps22', 'eps31', 'eps32','ddq2']])
+regr = linear_model.LinearRegression()
