@@ -14,3 +14,6 @@ regr = linear_model.LinearRegression()
 
 ytrain_pred = regr.predict(Xtrain) 
 plt.plot(t,ytrain) 
+
+plt.plot(t,ytrain_pred)
+RSS_train = np.mean((ytrain-ytrain_pred)**2) / np.mean((ytrain-np.mean(ytrain))**2) 
