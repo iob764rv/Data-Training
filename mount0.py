@@ -20,3 +20,5 @@ RSS_train = np.mean((ytrain-ytrain_pred)**2) / np.mean((ytrain-np.mean(ytrain))*
 
 RSS_train
 df = pd.read_csv('exp2.csv', header=None,sep=',',names=names, index_col=0) 
+
+ytest = np.array(df['I2']) 
