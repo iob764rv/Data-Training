@@ -23,3 +23,6 @@ df = pd.read_csv('exp2.csv', header=None,sep=',',names=names, index_col=0)
 
 ytest = np.array(df['I2']) 
 Xtest = np.array(df[['q2','dq2','eps21', 'eps22', 'eps31', 'eps32','ddq2']]) 
+
+ttest = np.array(df.index) 
+
