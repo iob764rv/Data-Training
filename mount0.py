@@ -30,3 +30,5 @@ plt.plot(t,ytest)
 plt.plot(t,ytest_pred)
 ytest_pred = regr.predict(Xtest) 
 plt.plot(t,ytest) 
+
+plt.plot(t,ytest_pred) 
