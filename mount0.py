@@ -32,3 +32,4 @@ ytest_pred = regr.predict(Xtest)
 plt.plot(t,ytest) 
 
 plt.plot(t,ytest_pred) 
+plt.legend(['actual', 'predicted']) 
