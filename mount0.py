@@ -35,3 +35,6 @@ plt.plot(t,ytest_pred)
 plt.legend(['actual', 'predicted']) 
 plt.xlabel('Time (secs)') 
 plt.ylabel('Current I2 (A)')
+RSS_test = np.mean((ytest-ytest_pred)**2) / np.mean((ytest-np.mean(ytest))**2) 
+
+RSS_test 
