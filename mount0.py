@@ -26,8 +26,9 @@ Xtest = np.array(df[['q2','dq2','eps21', 'eps22', 'eps31', 'eps32','ddq2']])
 
 ttest = np.array(df.index) 
 ytest_pred = regr.predict(Xtest) 
-plt.plot(t,ytest) 
+
 plt.plot(t,ytest_pred)
+
 ytest_pred = regr.predict(Xtest) 
 plt.plot(t,ytest) 
 
