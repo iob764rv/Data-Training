@@ -28,6 +28,7 @@ ttest = np.array(df.index)
 ytest_pred = regr.predict(Xtest) 
 
 plt.plot(t,ytest_pred)
+plt.plot(t,ytest) 
 
 ytest_pred = regr.predict(Xtest) 
 plt.plot(t,ytest) 
