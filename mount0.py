@@ -41,5 +41,6 @@ RSS_test = np.mean((ytest-ytest_pred)**2) / np.mean((ytest-np.mean(ytest))**2)
 
 RSS_test 
 
-model = LinearRegression() model.fit(X,y) # Fits a linear model for a data matrix 
+model = LinearRegression() 
+model.fit(X,y) # Fits a linear model for a data matrix 
 
