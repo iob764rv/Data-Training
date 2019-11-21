@@ -43,3 +43,4 @@ RSS_test
 
 model = LinearRegression() 
 model.fit(X,y)
+X yhat = model.predict(X)
