@@ -47,3 +47,4 @@ X yhat = model.predict(X)
 
 n = X.shape[0] 
 ntr = n // 2 
+
