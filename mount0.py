@@ -53,3 +53,4 @@ ytr = y[:ntr]
 
 dtest = np.arange(1,10) 
 nd = len(dtest) 
+mse = np.zeros(nd) 
