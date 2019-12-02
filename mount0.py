@@ -52,3 +52,4 @@ Xtr = X[:ntr]
 ytr = y[:ntr] 
 
 dtest = np.arange(1,10) 
+nd = len(dtest) 
