@@ -59,3 +59,4 @@ for i, d in dtest:
   
   model = LinearRegression()
   data model.fit(Xtr, ytr)
+  yhat = model.predict(Xts) 
