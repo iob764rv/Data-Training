@@ -60,3 +60,10 @@ for i, d in dtest:
   model = LinearRegression()
   data model.fit(Xtr, ytr)
   yhat = model.predict(Xts) 
+  
+  mse[i] = np.mean((yhat − yts)∗∗2)
+  # Select model with lower test error 
+  im = np.argmin(mse) 
+  dopt = dtest[im]
+
+  
