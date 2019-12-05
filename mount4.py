@@ -3,6 +3,7 @@
  import numpy as np 
  import matplotlib.pyplot as plt 
  import pickle
+ import numpy.polynomial.polynomial as poly
 from sklearn.linear_model import LinearRegression 
 from sklearn.metrics import r2_scor
 
