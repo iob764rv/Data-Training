@@ -162,6 +162,8 @@ names =[
 ] #
 
 df = pd.read_csv('exp1.csv', header=None,sep=',',names=names, index_col=0)
+        beta0 = np.array([1,2,−1]) 
+# True parameter value                                                                                         
                                                                                                 
                                                                                                 
                                                                                                 
