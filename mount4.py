@@ -166,20 +166,6 @@ df = pd.read_csv('exp1.csv', header=None,sep=',',names=names, index_col=0)
 # True parameter value                                                                                         
 x = np.linspace(0,1,10) 
 # Training values 
-                                                                                                
-                
-
-for x y = poly.polyval(x,beta0) # Training values for y
-# Get parameter estimate based on simple linear regression formula 
-xm = np.mean(x) 
-ym = np.mean(y) 
-sxy = np.mean((x−xm)∗(y−ym)) 
-sxx = np.mean((x−xm)∗∗2) 
-betahat1 = sxy/sxx 
-betahat0 = ym − betahat1∗xm
-# Plot true function and estimate 
-xp = np.linspace(0,3,100) 
-yp0 = poly.polyval(xp,beta0) 
-yphat = betahat0 + betahat1∗xp                                                                                 
+                                                                                                                                                                             
                                                                                                 
                                                                                                 
