@@ -65,3 +65,6 @@ for i, d in dtest:
   # Select model with lower test error 
   im = np.argmin(mse) 
   dopt = dtest[im]
+  
+  
+plt.plot(xp,np.column stack((yp0, yphat)), ’−’) 
