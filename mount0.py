@@ -65,5 +65,3 @@ for i, d in dtest:
   # Select model with lower test error 
   im = np.argmin(mse) 
   dopt = dtest[im]
-
-  
