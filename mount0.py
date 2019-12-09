@@ -66,5 +66,5 @@ for i, d in dtest:
   im = np.argmin(mse) 
   dopt = dtest[im]
   
-  
+
 plt.plot(xp,np.column stack((yp0, yphat)), ’−’) 
