@@ -68,3 +68,4 @@ for i, d in dtest:
   
 
 plt.plot(xp,np.column stack((yp0, yphat)), ’−’) 
+plt.scatter(x,y) 
