@@ -73,4 +73,4 @@ plt.scatter(x,y)
 
 plt.scatter(x,y) 
 plt.legend([’True’, ’Est’, ’Training’], loc=’upper left’) 
-
+plt.grid() plt.xlim([0,3]) plt.xlabel(’x’) 
