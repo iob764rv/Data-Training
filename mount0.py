@@ -71,6 +71,6 @@ plt.plot(xp,np.column stack((yp0, yphat)), ’−’)
 plt.scatter(x,y) 
 
 
-
-
 plt.scatter(x,y) 
+plt.legend([’True’, ’Est’, ’Training’], loc=’upper left’) 
+
