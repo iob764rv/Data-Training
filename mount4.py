@@ -18,9 +18,7 @@ from sklearn.metrics import r2_scor
   return file_size
   
 
- tsamp = 0.05
- # nt = ... 
- # nneuron
+ jsamp = 0.05
 
  nt, nneuron = X.shape 
  nout = y.shape[1] 
