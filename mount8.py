@@ -7,3 +7,4 @@ a = tn.Node(np.ones(10))
 b = tn.Node(np.ones(10))
 edge = a[0] ^ b[0]
 c = tn.contract(edge)
+print(c.tensor)
