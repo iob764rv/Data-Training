@@ -11,3 +11,5 @@ print(c.tensor)
 a = tn.Node(np.eye(2))
 
 c = tn.contract_between(a, b)
+c = a @ b
+c = tn.contract_parallel(edge)
