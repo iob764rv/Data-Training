@@ -9,3 +9,5 @@ edge = a[0] ^ b[0]
 c = tn.contract(edge)
 print(c.tensor)
 a = tn.Node(np.eye(2))
+
+c = tn.contract_between(a, b)
