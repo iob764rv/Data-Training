@@ -13,3 +13,5 @@ a = tn.Node(np.eye(2))
 c = tn.contract_between(a, b)
 c = a @ b
 c = tn.contract_parallel(edge)
+
+u_s, vh_s, trun_error = tn.split_node(node, left_edges, right_edges)
