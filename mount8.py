@@ -15,3 +15,4 @@ c = a @ b
 c = tn.contract_parallel(edge)
 
 u_s, vh_s, trun_error = tn.split_node(node, left_edges, right_edges)
+u, s, vh, trun_error = tn.split_node_full_svd(node, left_edges, right_edges)
