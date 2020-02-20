@@ -20,5 +20,4 @@ node = tn.Node(np.eye(2), name="Identity Matrix")
 
 trace_edge = a[0] ^ a[1]
 
-
 print("Is a[0] dangling?:", a[0].is_dangling())
