@@ -20,6 +20,6 @@ node = tn.Node(np.eye(2), name="Identity Matrix")
 
 
 trace_edge = a[0] ^ a[1]
-# Notice now that a[0] and a[1] are actually the same edge.
+
 print("Are a[0] and a[1] the same edge?:", a[0] is a[1])
 print("Is a[0] dangling?:", a[0].is_dangling())
