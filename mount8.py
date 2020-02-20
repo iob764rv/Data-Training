@@ -19,5 +19,4 @@ u, s, vh, trun_error = tn.split_node_full_svd(node, left_edges, right_edges)
 node = tn.Node(np.eye(2), name="Identity Matrix")
 
 trace_edge = a[0] ^ a[1]
-
 print("Is a[0] dangling?:", a[0].is_dangling())
