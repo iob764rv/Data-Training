@@ -5,6 +5,11 @@ import tensornetwork as tn
 def one_edge_at_a_time(a, b):
   node1 = tn.Node(a)
   node2 = tn.Node(b)
+  edge1 = node1[0] ^ node2[0]
+  edge2 = node1[1] ^ node2[1]
+  tn.contract(edge1)
+  result = tn.contract(edge2)
+  return result.tensor
 
 
 a = tn.Node(np.ones(10))
