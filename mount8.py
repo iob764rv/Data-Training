@@ -25,3 +25,5 @@ a = tn.Node(np.eye(2), axis_names=['alpha', 'beta'])
 edge = a['alpha'] ^ a['beta']
 result = tn.contract(edge)
 print(result.tensor)
+
+#result is 2.0
