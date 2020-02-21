@@ -2,6 +2,11 @@ import numpy as np
 import jax
 import tensornetwork as tn
 
+def one_edge_at_a_time(a, b):
+  node1 = tn.Node(a)
+  node2 = tn.Node(b)
+
+
 a = tn.Node(np.ones(10))
 # Either tensorflow tensors or numpy arrays are fine.
 b = tn.Node(np.ones(10))
