@@ -16,7 +16,9 @@ def use_contract_between(a, b):
   node2 = tn.Node(b)
   node1[0] ^ node2[0]
   node1[1] ^ node2[1]
-
+ # This is the same as 
+ # tn.contract_between(node1, node2)
+  result = node1 @ node2
 
 a = tn.Node(np.ones(10))
 # Either tensorflow tensors or numpy arrays are fine.
@@ -25,9 +27,7 @@ edge = a[0] ^ b[0]
 c = tn.contract(edge)
 print(c.tensor)
 a = tn.Node(np.eye(2))
- # This is the same as 
- # tn.contract_between(node1, node2)
-result = node1 @ node2
+
 
 c = tn.contract_between(a, b)
 c = a @ b
