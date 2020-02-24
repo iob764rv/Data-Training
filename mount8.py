@@ -48,3 +48,4 @@ print(result.tensor)
 #result is 2.0
 a = np.ones((1000, 1000))
 b = np.ones((1000, 1000))
+##runs one tesor at  a time
