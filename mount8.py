@@ -19,6 +19,11 @@ def use_contract_between(a, b):
  # This is the same as 
  # tn.contract_between(node1, node2)
   result = node1 @ node2
+  
+ def use_contract_parallel(a, b):
+  node1 = tn.Node(a)
+  node2 = tn.Node(b)
+  edge = node1[0] ^ node2[0]
 
 a = tn.Node(np.ones(10))
 # Either tensorflow tensors or numpy arrays are fine.
@@ -53,3 +58,4 @@ b = np.ones((1000, 1000))
 #print("Running use_cotract_between")
 #%timeit use_contract_between(a, b)
 ##runs one edge at  a time
+
