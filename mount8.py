@@ -26,6 +26,7 @@ def use_contract_between(a, b):
   edge = node1[0] ^ node2[0]
   node1[1] ^ node2[1]
   result = tn.contract_parallel(edge)
+  return result.tensor
 
 a = tn.Node(np.ones(10))
 # Either tensorflow tensors or numpy arrays are fine.
