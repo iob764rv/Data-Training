@@ -29,6 +29,9 @@ def use_contract_between(a, b):
    # is fully contracted.
   return result.tensor
 
+def use_contract_parallel(a, b):
+  node1 = tn.Node(a)
+
 a = tn.Node(np.ones(10))
 # Either tensorflow tensors or numpy arrays are fine.
 b = tn.Node(np.ones(10))
