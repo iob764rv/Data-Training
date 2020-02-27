@@ -36,6 +36,7 @@ def use_contract_parallel(a, b):
   node1[1] ^ node2[1]
   result = tn.contract_parallel(edge)
   return result.tensor
+#fully contracted
 
 a = tn.Node(np.ones(10))
 # Either tensorflow tensors or numpy arrays are fine.
