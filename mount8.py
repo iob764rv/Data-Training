@@ -75,3 +75,5 @@ b = np.ones((1000, 1000))
 a = tn.Node(np.ones((2, 2, 2)))
 b = tn.Node(np.ones((2, 2, 2)))
 c = tn.Node(np.ones((2, 2, 2)))
+d = tn.Node(np.ones((2, 2, 2)))
+# Make the network fully connected.
