@@ -85,4 +85,4 @@ b[1] ^ d[1]
 b[2] ^ c[2]
 c[0] ^ d[0]
 
-"greedy" contraction algorithm
+#"greedy" contraction algorithm
