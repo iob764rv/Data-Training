@@ -88,4 +88,4 @@ c[0] ^ d[0]
 #"greedy" contraction algorithm
 nodes = tn.reachable(a)
 result = tn.contractors.greedy(nodes)
-print(result.tensor)
+#print(result.tensor)
