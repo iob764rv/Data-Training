@@ -89,3 +89,4 @@ c[0] ^ d[0]
 nodes = tn.reachable(a)
 result = tn.contractors.greedy(nodes)
 #print(result.tensor)
+#result is 64.0
