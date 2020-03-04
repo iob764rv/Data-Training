@@ -86,3 +86,4 @@ b[2] ^ c[2]
 c[0] ^ d[0]
 
 #"greedy" contraction algorithm
+nodes = tn.reachable(a)
