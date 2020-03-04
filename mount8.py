@@ -90,3 +90,4 @@ nodes = tn.reachable(a)
 result = tn.contractors.greedy(nodes)
 #print(result.tensor)
 #result is 64.0
+ones = np.ones((2, 2, 2))
