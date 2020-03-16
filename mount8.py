@@ -99,3 +99,6 @@ tn.ncon([ones, ones, ones, ones],
          [4, 5, 6]])
 
 ones = np.ones((2, 2))
+tn.ncon([ones, ones], [[-1, 1], [1, -2]])
+
+diagonal_array =
