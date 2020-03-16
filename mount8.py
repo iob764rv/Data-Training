@@ -97,3 +97,5 @@ tn.ncon([ones, ones, ones, ones],
          [1, 3, 5], 
          [2, 3, 6],
          [4, 5, 6]])
+
+ones = np.ones((2, 2))
