@@ -101,4 +101,4 @@ tn.ncon([ones, ones, ones, ones],
 ones = np.ones((2, 2))
 tn.ncon([ones, ones], [[-1, 1], [1, -2]])
 
-diagonal_array =
+#diagonal_array =
