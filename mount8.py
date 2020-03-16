@@ -91,3 +91,9 @@ result = tn.contractors.greedy(nodes)
 #print(result.tensor)
 #result is 64.0
 ones = np.ones((2, 2, 2))
+
+tn.ncon([ones, ones, ones, ones], 
+        [[1, 2, 4], 
+         [1, 3, 5], 
+         [2, 3, 6],
+         [4, 5, 6]])
