@@ -104,5 +104,6 @@ tn.ncon([ones, ones], [[-1, 1], [1, -2]])
 diagonal_array =np.array([[2.0, 0.0, 0.0],
                            [0.0, 2.5, 0.0],
                            [0.0, 0.0, 1.5]]) 
-
 a = tn.Node(diagonal_array)
+print("Contraction of U and V*:")
+print((u @ vh).tensor)
