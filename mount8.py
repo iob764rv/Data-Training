@@ -113,3 +113,4 @@ u, vh, truncation_error = tn.split_node(
 #u, vh, truncation_error = tn.split_node(
 #    a, left_edges=[a[0]], right_edges=[a[1]], max_singular_values=2)
 
+print(truncation_error)
