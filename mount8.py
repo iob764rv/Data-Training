@@ -40,6 +40,8 @@ def use_contract_parallel(a, b):
 
 def calculate_abc_trace(a, b, c):
   an = tn.Node(a)
+  bn = tn.Node(b)
+  cn = tn.Node(c)
   #####
 
 a = tn.Node(np.ones(10))
