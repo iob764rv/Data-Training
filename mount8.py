@@ -45,6 +45,7 @@ def calculate_abc_trace(a, b, c):
   
   an[1] ^ bn[0]
   bn[1] ^ cn[0]
+  cn[1] ^ an[0]
   #####
 
 a = tn.Node(np.ones(10))
