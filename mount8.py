@@ -38,6 +38,10 @@ def use_contract_parallel(a, b):
   return result.tensor
 #fully contracted
 
+def calculate_abc_trace(a, b, c):
+  an = tn.Node(a)
+  #####
+
 a = tn.Node(np.ones(10))
 # Either tensorflow tensors or numpy arrays are fine.
 b = tn.Node(np.ones(10))
