@@ -128,3 +128,5 @@ print(truncation_error)
 a = np.ones((4096, 4096))
 b = np.ones((4096, 4096))
 c = np.ones((4096, 4096))
+
+tn.set_default_backend("numpy")
