@@ -131,3 +131,4 @@ c = np.ones((4096, 4096))
 
 tn.set_default_backend("numpy")
 %timeit np.array(calculate_abc_trace(a, b, c))
+tn.set_default_backend("jax")
