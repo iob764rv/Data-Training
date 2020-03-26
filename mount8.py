@@ -80,7 +80,7 @@ b = np.ones((1000, 1000))
 
 %timeit one_edge_at_a_time(a, b)
 #print("Running use_cotract_between")
-#%timeit use_contract_between(a, b)
+%timeit use_contract_between(a, b)
 ##runs one edge at  a time
 
 a = tn.Node(np.ones((2, 2, 2)))
