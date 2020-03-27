@@ -133,3 +133,4 @@ tn.set_default_backend("numpy")
 tn.set_default_backend("jax")
 ########
 tf.enable_v2_behavior()
+tn.set_default_backend("tensorflow")
