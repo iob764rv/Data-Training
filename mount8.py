@@ -137,3 +137,4 @@ tn.set_default_backend("tensorflow")
 
 
 class TNLayer(tf.keras.layers.Layer):
+ #  super(TNLayer, self).__init__()
