@@ -132,3 +132,4 @@ tn.set_default_backend("numpy")
 %timeit np.array(calculate_abc_trace(a, b, c))
 tn.set_default_backend("jax")
 ########
+tf.enable_v2_behavior()
