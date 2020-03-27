@@ -134,3 +134,6 @@ tn.set_default_backend("jax")
 ########
 tf.enable_v2_behavior()
 tn.set_default_backend("tensorflow")
+
+
+class TNLayer(tf.keras.layers.Layer):
