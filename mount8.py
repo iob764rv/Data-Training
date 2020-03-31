@@ -157,3 +157,4 @@ class TNLayer(tf.keras.layers.Layer):
       a[2] ^ b[2]
       c = a @ x_node
       result = (c @ b).tensor
+#      return result + bias_var
