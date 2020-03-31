@@ -146,3 +146,4 @@ class TNLayer(tf.keras.layers.Layer):
     self.bias = tf.Variable(tf.zeros(shape=(8, 8)), name="bias", trainable=True)
     
   def call(self, inputs):
+    def f(input_vec, a_var, b_var, bias_var):
