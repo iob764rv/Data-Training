@@ -147,3 +147,4 @@ class TNLayer(tf.keras.layers.Layer):
     
   def call(self, inputs):
     def f(input_vec, a_var, b_var, bias_var):
+      input_vec = tf.reshape(input_vec, (8,8))
