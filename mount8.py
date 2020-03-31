@@ -150,3 +150,4 @@ class TNLayer(tf.keras.layers.Layer):
       input_vec = tf.reshape(input_vec, (8,8))
       # create the network.
       a = tn.Node(a_var)
+      #b = tn.Node(b_var)
