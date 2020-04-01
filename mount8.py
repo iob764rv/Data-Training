@@ -167,3 +167,7 @@ Dense = tf.keras.layers.Dense
 #fc_model = tf.keras.Sequential(
  #   [
   #   tf.keras.Input(shape=(2,)),
+#Dense(64, activation=tf.nn.swish),
+ #    Dense(64, activation=tf.nn.swish),
+  #   Dense(1, activation=None)])
+#fc_model.summary()
