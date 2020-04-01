@@ -157,7 +157,7 @@ class TNLayer(tf.keras.layers.Layer):
       a[2] ^ b[2]
       c = a @ x_node
       result = (c @ b).tensor
-#      return result + bias_var
+      return result + bias_var
 result = tf.vectorized_map(
         lambda vec: f(vec, self.a_var, self.b_var, self.bias), inputs)
     return tf.nn.swish(tf.reshape(result, (-1, 64)))
