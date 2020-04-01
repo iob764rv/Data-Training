@@ -164,3 +164,6 @@ class TNLayer(tf.keras.layers.Layer):
     
 
 Dense = tf.keras.layers.Dense
+#fc_model = tf.keras.Sequential(
+ #   [
+  #   tf.keras.Input(shape=(2,)),
