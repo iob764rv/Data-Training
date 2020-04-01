@@ -163,3 +163,4 @@ class TNLayer(tf.keras.layers.Layer):
     self.bias = tf.Variable(tf.zeros(shape=(8, 8)), name="bias", trainable=True)
     
 
+Dense = tf.keras.layers.Dense
