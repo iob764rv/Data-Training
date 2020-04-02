@@ -169,5 +169,5 @@ Dense = tf.keras.layers.Dense
   #   tf.keras.Input(shape=(2,)),
 #Dense(64, activation=tf.nn.swish),
  #    Dense(64, activation=tf.nn.swish),
-  #   Dense(1, activation=None)])
+     Dense(1, activation=None)])
 fc_model.summary()
