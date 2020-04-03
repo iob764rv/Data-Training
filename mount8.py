@@ -177,7 +177,6 @@ tn_model = tf.keras.Sequential(
     [
      tf.keras.Input(shape=(2,)),
      Dense(64, activation=tf.nn.swish),
-     # Here, we replace the dense layer with our MPS.
-    # TNLayer(),
+     TNLayer(),
      Dense(1, activation=None)])
 tn_model.summary()
