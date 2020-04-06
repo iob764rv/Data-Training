@@ -190,3 +190,8 @@ Y = np.concatenate([np.ones((40)), -np.ones((40))])
 
 #tn_model.compile(optimizer="adam", loss="mean_squared_error")
 #tn_model.fit(X, Y, epochs=300, verbose=1)
+
+x_min, x_max = X[:, 0].min() - 5, X[:, 0].max() + 5
+y_min, y_max = X[:, 1].min() - 5, X[:, 1].max() + 5
+xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
+                     np.arange(y_min, y_max, h))
