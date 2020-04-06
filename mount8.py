@@ -137,7 +137,7 @@ print("Contraction of U and V*:")
 print((u @ vh).tensor)
 u, vh, truncation_error = tn.split_node(
     a, left_edges=[a[0]], right_edges=[a[1]], max_singular_values=2)
-#a = tn.Node(diagonal_array)
+a = tn.Node(diagonal_array)
 
 
 print(truncation_error)
