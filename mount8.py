@@ -181,12 +181,12 @@ tn_model = tf.keras.Sequential(
      Dense(1, activation=None)])
 tn_model.summary()
 
-#X = np.concatenate([np.random.randn(20, 2) + np.array([3, 3]), 
+X = np.concatenate([np.random.randn(20, 2) + np.array([3, 3]), 
  #            np.random.randn(20, 2) + np.array([-3, -3]), 
   #           np.random.randn(20, 2) + np.array([-3, 3]), 
    #          np.random.randn(20, 2) + np.array([3, -3]),])
 
-#Y = np.concatenate([np.ones((40)), -np.ones((40))])
+Y = np.concatenate([np.ones((40)), -np.ones((40))])
 
 #tn_model.compile(optimizer="adam", loss="mean_squared_error")
 #tn_model.fit(X, Y, epochs=300, verbose=1)
