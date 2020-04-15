@@ -217,7 +217,7 @@ Z = tn_model.predict(np.c_[xx.ravel(), yy.ravel()])
 Z = Z.reshape(xx.shape)
 
 #plt.scatter(X[:, 0], X[:, 1], c=Y, cmap=plt.cm.Paired)
-#fc_model.compile(optimizer="adam", loss="mean_squared_error")
+fc_model.compile(optimizer="adam", loss="mean_squared_error")
 #fc_model.fit(X, Y, epochs=300, verbose=0)
 
 #h = 1.0
