@@ -230,7 +230,7 @@ Z = tn_model.predict(np.c_[xx.ravel(), yy.ravel()])
 
 Z = Z.reshape(xx.shape)
 fc_model.compile(optimizer="adam", loss="mean_squared_error")
-#fc_model.fit(X, Y, epochs=300, verbose=0)
+fc_model.fit(X, Y, epochs=300, verbose=0)
 
 
 fc_model.fit(X, Y, epochs=300, verbose=0)
