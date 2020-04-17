@@ -256,4 +256,5 @@ class TNLayer(tf.keras.layers.Layer):
     self.bias = tf.Variable(tf.zeros(shape=(8, 8)), name="bias", trainable=True)
 
 
-
+      a = tn.Node(a_var)
+      b = tn.Node(b_var)
