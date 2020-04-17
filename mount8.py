@@ -66,6 +66,7 @@ result = tf.vectorized_map(
         lambda vec: f(vec, self.a_var, self.b_var, self.bias), inputs)
     return tf.nn.swish(tf.reshape(result, (-1, 64)))
 
+
 a = tn.Node(np.ones(10))
 # Either tensorflow tensors or numpy arrays are fine.
 b = tn.Node(np.ones(10))
@@ -234,4 +235,19 @@ fc_model.fit(X, Y, epochs=300, verbose=0)
 
 
 fc_model.fit(X, Y, epochs=300, verbose=0)
+
+
+class TNLayer(tf.keras.layers.Layer):
+
+  def __init__(self):
+    super(TNLayer, self).__init__()
+    # Create the variables for the layer.
+    self.a_var = tf.Variable(tf.random.normal(
+            shape=(8, 8, 2), stddev=1.0/16.0),
+             name="a", trainable=True)
+    self.b_var = tf.Variable(tf.random.normal(shape=(8, 8, 2), stddev=1.0/16.0),
+                             name="b", trainable=True)
+    self.bias = tf.Variable(tf.zeros(shape=(8, 8)), name="bias", trainable=True)
+
+
 
