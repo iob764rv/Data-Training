@@ -259,6 +259,6 @@ class TNLayer(tf.keras.layers.Layer):
       a = tn.Node(a_var)
       b = tn.Node(b_var)
       x_node = tn.Node(input_vec)
-      a[1] ^ x_node[0]
-      b[1] ^ x_node[1]
-      a[2] ^ b[2]
+      #a[1] ^ x_node[0]
+      #b[1] ^ x_node[1]
+      #a[2] ^ b[2]
