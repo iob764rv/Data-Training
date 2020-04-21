@@ -16,8 +16,7 @@ def use_contract_between(a, b):
   node2 = tn.Node(b)
   node1[0] ^ node2[0]
   node1[1] ^ node2[1]
- # This is the same as 
- # tn.contract_between(node1, node2)
+  tn.contract_between(node1, node2)
   result = node1 @ node2
   
  def use_contract_parallel(a, b):
