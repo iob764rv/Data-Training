@@ -32,7 +32,6 @@ def use_contract_parallel(a, b):
   node1 = tn.Node(a)
   node2 = tn.Node(b)
   edge = node1[0] ^ node2[0]
-  node1[1] ^ node2[1]
   result = tn.contract_parallel(edge)
   return result.tensor
 #fully contracted
