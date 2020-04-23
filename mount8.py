@@ -34,7 +34,7 @@ def use_contract_parallel(a, b):
   edge = node1[0] ^ node2[0]
   result = tn.contract_parallel(edge)
   return result.tensor
-#fully contracted
+
 
 def calculate_abc_trace(a, b, c):
   an = tn.Node(a)
