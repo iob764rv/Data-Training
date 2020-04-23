@@ -13,7 +13,6 @@ def one_edge_at_a_time(a, b):
 
 def use_contract_between(a, b):
   node1 = tn.Node(a)
-  node2 = tn.Node(b)
   result = node1
   
  def use_contract_parallel(a, b):
