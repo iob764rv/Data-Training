@@ -10,10 +10,6 @@ def one_edge_at_a_time(a, b):
   tn.contract(edge1)
   result = tn.contract(edge2)
   return result.tensor
-
-def use_contract_between(a, b):
-  node1 = tn.Node(a)
-  result = node1
   
  def use_contract_parallel(a, b):
   node1 = tn.Node(a)
