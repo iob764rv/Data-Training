@@ -20,6 +20,7 @@ def one_edge_at_a_time(a, b):
    # is fully contracted.
   return result.tensor
 
+
 def use_contract_parallel(a, b):
   node1 = tn.Node(a)
   node2 = tn.Node(b)
