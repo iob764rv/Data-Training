@@ -234,6 +234,7 @@ fc_model.fit(X, Y, epochs=300, verbose=0)
 fc_model.fit(X, Y, epochs=300, verbose=0)
 
 
+
 class TNLayer(tf.keras.layers.Layer):
 
   def __init__(self):
@@ -244,7 +245,6 @@ class TNLayer(tf.keras.layers.Layer):
     self.b_var = tf.Variable(tf.random.normal(shape=(8, 8, 2), stddev=1.0/16.0),
                              name="b", trainable=True)
     self.bias = tf.Variable(tf.zeros(shape=(8, 8)), name="bias", trainable=True)
-
 
       a = tn.Node(a_var)
       b = tn.Node(b_var)
