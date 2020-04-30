@@ -21,8 +21,6 @@ def one_edge_at_a_time(a, b):
   return result.tensor
 
 
-def use_contract_parallel(a, b):
-
 
 
 def calculate_abc_trace(a, b, c):
