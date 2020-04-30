@@ -23,7 +23,6 @@ def one_edge_at_a_time(a, b):
 
 def use_contract_parallel(a, b):
   node1 = tn.Node(a)
-
   result = tn.contract_parallel(edge)
   return result.tensor
 
