@@ -22,7 +22,7 @@ def one_edge_at_a_time(a, b):
 
 
 def use_contract_parallel(a, b):
-  result = tn.contract_parallel(edge)
+
 
 
 def calculate_abc_trace(a, b, c):
