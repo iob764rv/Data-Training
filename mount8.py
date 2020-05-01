@@ -22,7 +22,6 @@ def one_edge_at_a_time(a, b):
 
 
 
-
 def calculate_abc_trace(a, b, c):
   an = tn.Node(a)
   bn = tn.Node(b)
