@@ -228,7 +228,6 @@ fc_model.fit(X, Y, epochs=300, verbose=0)
 fc_model.fit(X, Y, epochs=300, verbose=0)
 
 
-
 class TNLayer(tf.keras.layers.Layer):
 
   def __init__(self):
