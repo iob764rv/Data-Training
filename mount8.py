@@ -246,3 +246,4 @@ class TNLayer(tf.keras.layers.Layer):
       a[1] ^ x_node[0]
       b[1] ^ x_node[1]
       a[2] ^ b[2]
+      
