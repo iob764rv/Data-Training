@@ -30,6 +30,7 @@ def calculate_abc_trace(a, b, c):
   bn[1] ^ cn[0]
   cn[1] ^ an[0]
   return (an @ bn @ cn).tensor
+
   #####
   def call(self, inputs):
     def f(input_vec, a_var, b_var, bias_var):
