@@ -17,4 +17,5 @@ tn.set_default_backend("tensorflo
     self.bias = tf.Variable(tf.zeros(shape=(8, 8)), name="bias", trainable=True)
 
                        
+                       
   #def call(self, inputs):
