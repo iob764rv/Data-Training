@@ -22,3 +22,5 @@ tn.set_default_backend("tensorflo
     def f(input_vec, a_var, b_var, bias_var):
       # Reshape to a matrix instead of a vector.
       input_vec = tf.reshape(input_vec, (8,8))
+      a = tn.Node(a_var)
+      b = tn.Node(b_var)
