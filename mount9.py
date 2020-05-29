@@ -24,3 +24,9 @@ tn.set_default_backend("tensorflo
       input_vec = tf.reshape(input_vec, (8,8))
       a = tn.Node(a_var)
       b = tn.Node(b_var)
+                    
+      x_node = tn.Node(input_vec)
+      a[1] ^ x_node[0]
+      b[1] ^ x_node[1]
+      a[2] ^ b[2]
+
