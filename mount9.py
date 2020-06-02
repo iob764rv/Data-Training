@@ -32,3 +32,4 @@ tn.set_default_backend("tensorflo
       c = a @ x_node
       result = (c @ b).tensor
       return result + bias_var
+      
