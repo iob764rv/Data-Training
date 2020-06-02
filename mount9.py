@@ -5,7 +5,6 @@ import tensorflow as tf
 tf.enable_v2_behavior()
 import tensornetwork as tn
 tn.set_default_backend("tensorflo
-
                       
   def __init__(self):
     super(TNLayer, self).__init__()
