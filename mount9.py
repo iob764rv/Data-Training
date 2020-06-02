@@ -30,3 +30,4 @@ tn.set_default_backend("tensorflo
       a[2] ^ b[2]
 
       c = a @ x_node
+      result = (c @ b).tensor
