@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 tf.enable_v2_behavior()
 import tensornetwork as tn
-tn.set_default_backend("tensorflow
+tn.set_default_backend("tensorflow"
                       
   def __init__(self):
     super(TNLayer, self).__init__()
