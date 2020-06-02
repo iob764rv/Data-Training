@@ -35,4 +35,4 @@ tn.set_default_backend("tensorflo
                        
       result = tf.vectorized_map(
         lambda vec: f(vec, self.a_var, self.b_var, self.bias), inputs)
-   #return tf.nn.swish(tf.reshape(result, (-1, 64)))
+   return tf.nn.swish(tf.reshape(result, (-1, 64)))
