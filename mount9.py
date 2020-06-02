@@ -29,3 +29,4 @@ tn.set_default_backend("tensorflo
       b[1] ^ x_node[1]
       a[2] ^ b[2]
 
+      c = a @ x_node
