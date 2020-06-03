@@ -43,3 +43,5 @@ fc_model = tf.keras.Sequential(
      Dense(64, activation=tf.nn.swish),
      Dense(64, activation=tf.nn.swish),
      Dense(1, activation=None)])
+
+fc_model.summary()
