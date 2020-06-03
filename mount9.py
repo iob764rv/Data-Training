@@ -45,3 +45,14 @@ fc_model = tf.keras.Sequential(
      Dense(1, activation=None)])
 
 fc_model.summary()
+
+
+tn_model = tf.keras.Sequential(
+    [
+     tf.keras.Input(shape=(2,)),
+     Dense(64, activation=tf.nn.swish),
+      TNLayer(),
+     Dense(1, activation=None)])
+
+tn_model.summary()
+
