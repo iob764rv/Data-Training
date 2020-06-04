@@ -61,7 +61,7 @@ tn_model.summary()
 X = np.concatenate([np.random.randn(20, 2) + np.array([3, 3]), 
  #            np.random.randn(20, 2) + np.array([-3, -3]), 
   #           np.random.randn(20, 2) + np.array([-3, 3]), 
-   #          np.random.randn(20, 2) + np.array([3, -3]),])
+             np.random.randn(20, 2) + np.array([3, -3]),])
 
 #Y = np.concatenate([np.ones((40)), -np.ones((40))])
 
