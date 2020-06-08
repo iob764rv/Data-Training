@@ -76,6 +76,6 @@ xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
 Z = fc_model.predict(np.c_[xx.ravel(), yy.ravel()]) 
 
 
-#Z = Z.reshape(xx.shape)
+Z = Z.reshape(xx.shape)
 #plt.contourf(xx, yy, Z)
 #plt.axis('off')
