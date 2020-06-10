@@ -76,4 +76,4 @@ Z = fc_model.predict(np.c_[xx.ravel(), yy.ravel()])
 
 Z = Z.reshape(xx.shape)
 plt.contourf(xx, yy, Z)
-#plt.axis('off')
+plt.axis('off')
