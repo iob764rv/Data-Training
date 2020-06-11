@@ -67,6 +67,7 @@ Y = np.concatenate([np.ones((40)), -np.ones((40))])
 tn_model.compile(optimizer="adam", loss="mean_squared_error")
 tn_model.fit(X, Y, epochs=300, verbose=1)
 
+
 h = 1.0
 x_min, x_max = X[:, 0].min() - 5, X[:, 0].max() + 5
 y_min, y_max = X[:, 1].min() - 5, X[:, 1].max() + 5
