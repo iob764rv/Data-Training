@@ -9,3 +9,7 @@ import errno
 import fileinput
 
 import glob
+import hashlib
+import jinja2
+import json
+import logging
