@@ -25,3 +25,6 @@ import sys
 import time
 from lxml import etree
 from lxml.builder import E
+
+import opx_bld_basics
+import opx_get_packages
