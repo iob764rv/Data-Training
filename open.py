@@ -28,3 +28,4 @@ from lxml.builder import E
 
 import opx_bld_basics
 import opx_get_packages
+import opx_rootfs
