@@ -39,3 +39,7 @@ verbosity = 0
 def _str2bool(s):
 
    ##
+   
+    s = s.strip().lower()
+
+    if s in ["1", "true"]:
