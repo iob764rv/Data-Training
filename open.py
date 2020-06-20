@@ -32,3 +32,5 @@ import opx_rootfs
 
 build_num = 99999
 build_suffix = ""
+
+verbosity = 0
