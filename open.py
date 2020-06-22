@@ -43,3 +43,7 @@ def _str2bool(s):
     s = s.strip().lower()
 
     if s in ["1", "true"]:
+
+    if s in ["0", "false"]:
+
+        return False
