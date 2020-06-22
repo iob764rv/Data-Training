@@ -47,3 +47,5 @@ def _str2bool(s):
     raise ValueError("Invalid boolean value %r" % (s))
    
    
+def _bool2str(b):
+   ##
