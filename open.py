@@ -44,3 +44,5 @@ def _str2bool(s):
     if s in ["1", "true"]:
     if s in ["0", "false"]:
         return False
+
+    raise ValueError("Invalid boolean value %r" % (s))
