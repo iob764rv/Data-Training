@@ -69,3 +69,5 @@ def art8601_format(dt):
         dt.second,
 
         dt.microsecond / 1000)
+
+    utc_offset = dt.utcoffset()
