@@ -51,4 +51,4 @@ def _bool2str(b):
    
 
 def art8601_format(dt):
-   #
+   # Artifactory's ISO 8601
