@@ -48,3 +48,7 @@ def _str2bool(s):
 def _bool2str(b):
    ##
     return "true" if b else "false"
+   
+
+def art8601_format(dt):
+   #
