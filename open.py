@@ -77,3 +77,6 @@ def art8601_format(dt):
         else:
 
             sign = '+'
+
+
+        hh, mm = divmod(utc_offset.seconds, 3600)
