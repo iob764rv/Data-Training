@@ -65,3 +65,9 @@ def art8601_format(dt):
         dt.microsecond / 1000)
 
     utc_offset = dt.utcoffset()
+
+    if utc_offset is not None:
+
+        if utc_offset.days < 0:
+
+            sign = '-'
