@@ -71,3 +71,9 @@ def art8601_format(dt):
         if utc_offset.days < 0:
 
             sign = '-'
+
+            utc_offset = - utc_offset
+
+        else:
+
+            sign = '+'
