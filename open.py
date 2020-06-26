@@ -83,3 +83,5 @@ s += "%s%02d%02d" % (sign, hh, mm)
 
 
     return s
+
+class OpxRelPackageRestriction(object):
