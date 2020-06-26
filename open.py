@@ -87,7 +87,6 @@ class OpxRelPackageRestriction(object):
 
                  lower_bound_inclusive,
                  upper_bound,
-
                  upper_bound_inclusive):
 
         self.lower_bound = lower_bound
