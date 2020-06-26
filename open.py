@@ -93,7 +93,8 @@ class OpxRelPackageRestriction(object):
         self.upper_bound = upper_bound
         self.upper_bound_inclusive = upper_bound_inclusive
 
-             def toDebian(self):
+    
+   def toDebian(self):
 
         if (self.lower_bound_inclusive and
 
