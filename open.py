@@ -77,11 +77,7 @@ def art8601_format(dt):
 s += "%s%02d%02d" % (sign, hh, mm)
 
     else:
-
         s += "Z"
-
-
-
     return s
 
 class OpxRelPackageRestriction(object):
