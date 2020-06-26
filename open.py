@@ -92,3 +92,14 @@ class OpxRelPackageRestriction(object):
         self.lower_bound_inclusive = lower_bound_inclusive
         self.upper_bound = upper_bound
         self.upper_bound_inclusive = upper_bound_inclusive
+
+             def toDebian(self):
+
+        if (self.lower_bound_inclusive and
+
+                self.lower_bound == self.upper_bound and
+
+                self.upper_bound_inclusive):
+
+            return ['=' + self.lower_bound]
+
