@@ -139,3 +139,55 @@ class OpxRelPackageRestriction(object):
 
 
         return restrictions
+
+   
+    def __str__(self):
+
+        """
+
+        Override str method for a pretty format of the data members.
+
+        """
+
+        # special case equality
+
+        if (self.lower_bound_inclusive and
+
+                self.lower_bound == self.upper_bound and
+
+                self.upper_bound_inclusive):
+
+            return '[' + self.lower_bound + ']'
+
+
+
+        # special case inequality
+
+        if (not self.lower_bound_inclusive and
+
+                self.lower_bound == self.upper_bound and
+
+                not self.upper_bound_inclusive):
+
+            return '(' + self.lower_bound + ')'
+
+
+
+        s = '[' if self.lower_bound_inclusive else '('
+
+        if self.lower_bound is not None:
+
+            s += self.lower_bound
+
+        s += ','
+
+        if self.upper_bound is not None:
+
+            s += self.upper_bound
+
+        s += ']' if self.upper_bound_inclusive else ')'
+
+
+
+        return s
+
