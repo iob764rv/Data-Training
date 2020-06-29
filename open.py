@@ -104,3 +104,38 @@ class OpxRelPackageRestriction(object):
 
             return ['=' + self.lower_bound]
 
+        if (not self.lower_bound_inclusive and
+
+                self.lower_bound == self.upper_bound and
+
+                not self.upper_bound_inclusive):
+
+            return ['!=' + self.lower_bound]
+
+
+
+        restrictions = list()
+
+        if self.lower_bound is not None:
+
+            if self.lower_bound_inclusive:
+
+                restrictions.append('>=' + self.lower_bound)
+
+            else:
+
+                restrictions.append('>>' + self.lower_bound)
+
+        if self.upper_bound is not None:
+
+            if self.upper_bound_inclusive:
+
+                restrictions.append('<=' + self.upper_bound)
+
+            else:
+
+                restrictions.append('<<' + self.upper_bound)
+
+
+
+        return restrictions
