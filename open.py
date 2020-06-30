@@ -177,7 +177,6 @@ class OpxRelPackageRestriction(object):
         s += ','
         if self.upper_bound is not None:
             s += self.upper_bound
-
         s += ']' if self.upper_bound_inclusive else ')'
 
         return s
