@@ -174,7 +174,6 @@ class OpxRelPackageRestriction(object):
         s = '[' if self.lower_bound_inclusive else '('
 
         if self.lower_bound is not None:
-
             s += self.lower_bound
         s += ','
         if self.upper_bound is not None:
