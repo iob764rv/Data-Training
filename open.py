@@ -179,3 +179,34 @@ class OpxRelPackageRestriction(object):
 
         return s
 
+class OpxRelPackage(object):
+
+    def __init__(self, name, restriction):
+
+        self.name = name
+
+        self.restriction = restriction
+
+
+
+    @classmethod
+
+    def fromElement(cls, elem):
+
+        if elem.text:
+
+            match = re.match(r'\A([a-zA-Z0-9][a-zA-Z0-9+-.]+)\s*(?:\(\s*(<<|<=|!=|=|>=|>>)\s*([0-9][a-z0-9+-.:~]+)\s*\))?\s*\Z', elem.text)
+
+            if not match:
+
+                raise ValueError("Can't parse version: ->%s<-" % elem.text)
+
+            name = match.group(1)
+
+            relation = match.group(2)
+
+            version = match.group(3)
+
+
+
+            restriction = None
