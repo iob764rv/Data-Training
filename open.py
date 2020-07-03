@@ -182,7 +182,6 @@ class OpxRelPackage(object):
 
         self.restriction = restriction
 
-
     @classmethod
 
     def fromElement(cls, elem):
