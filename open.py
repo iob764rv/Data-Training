@@ -205,5 +205,4 @@ class OpxRelPackage(object):
             relation = match.group(2)
             version = match.group(3)
 
-
             restriction = None
