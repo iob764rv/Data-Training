@@ -143,11 +143,6 @@ class OpxRelPackageRestriction(object):
    
     def __str__(self):
 
-        """
-
-        Override str method for a pretty format of the data members.
-
-        """
 
         # special case equality
 
