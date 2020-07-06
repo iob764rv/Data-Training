@@ -261,3 +261,16 @@ class OpxRelPackage(object):
 
                     upper_bound = None
                     upper_bound_inclusive = False
+                    restriction = OpxRelPackageRestriction(
+
+                    lower_bound,
+
+                    lower_bound_inclusive,
+
+                    upper_bound,
+
+                    upper_bound_inclusive)
+
+
+
+            return OpxRelPackage(name, restriction)
