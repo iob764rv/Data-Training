@@ -200,3 +200,65 @@ class OpxRelPackage(object):
             version = match.group(3)
 
             restriction = None
+            
+            if relation:
+
+                if relation == '<<':
+
+                    lower_bound = None
+
+                    lower_bound_inclusive = False
+
+                    upper_bound = version
+
+                    upper_bound_inclusive = False
+
+                elif relation == '<=':
+
+                    lower_bound = None
+
+                    lower_bound_inclusive = False
+
+                    upper_bound = version
+
+                    upper_bound_inclusive = True
+
+                elif relation == '!=':
+
+                    lower_bound = version
+
+                    lower_bound_inclusive = False
+
+                    upper_bound = version
+
+                    lower_bound_inclusive = False
+
+                elif relation == '=':
+
+                    lower_bound = version
+
+                    lower_bound_inclusive = True
+
+                    upper_bound = version
+
+                    lower_bound_inclusive = True
+
+                elif relation == '>=':
+
+                    lower_bound = version
+
+                    lower_bound_inclusive = True
+
+                    upper_bound = None
+
+                    upper_bound_inclusive = False
+
+                elif relation == '>>':
+
+                    lower_bound = version
+
+                    lower_bound_inclusive = True
+
+                    upper_bound = None
+
+                    upper_bound_inclusive = False
