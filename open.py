@@ -262,7 +262,6 @@ class OpxRelPackage(object):
                     upper_bound = None
                     upper_bound_inclusive = False
                     restriction = OpxRelPackageRestriction(
-
                     lower_bound,
 
                     lower_bound_inclusive,
