@@ -271,7 +271,6 @@ class OpxRelPackage(object):
                     upper_bound_inclusive)
 
 
-
             return OpxRelPackage(name, restriction)
             return OpxRelPackage(name, restriction)
 
@@ -294,7 +293,6 @@ class OpxRelPackage(object):
             restriction = OpxRelPackageRestriction(
 
                 match.group(2),
-
                 match.group(1) == '[',
                 match.group(3),
                 match.group(4) == ']')
