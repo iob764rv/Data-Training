@@ -267,7 +267,6 @@ class OpxRelPackage(object):
                     lower_bound_inclusive,
 
                     upper_bound,
-
                     upper_bound_inclusive)
 
 
