@@ -281,7 +281,6 @@ class OpxRelPackage(object):
         version = elem.get('version')
 
         if not version:
-
             return OpxRelPackage(name, None)
 
 
