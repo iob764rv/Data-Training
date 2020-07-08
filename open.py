@@ -273,3 +273,32 @@ class OpxRelPackage(object):
 
 
             return OpxRelPackage(name, restriction)
+            return OpxRelPackage(name, restriction)
+
+
+
+        name = elem.get('name')
+
+        version = elem.get('version')
+
+        if not version:
+
+            return OpxRelPackage(name, None)
+
+
+
+        match = re.match(r'\A([[(])([0-9][a-z0-9+-.:~]+)?,([0-9][a-z0-9+-.:~]+)?([])])\Z', version)
+
+        if match:
+
+            restriction = OpxRelPackageRestriction(
+
+                match.group(2),
+
+                match.group(1) == '[',
+
+                match.group(3),
+
+                match.group(4) == ']')
+
+            return OpxRelPackage(name, restriction)
