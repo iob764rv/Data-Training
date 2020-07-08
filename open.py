@@ -296,9 +296,7 @@ class OpxRelPackage(object):
                 match.group(2),
 
                 match.group(1) == '[',
-
                 match.group(3),
-
                 match.group(4) == ']')
 
             return OpxRelPackage(name, restriction)
