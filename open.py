@@ -263,7 +263,6 @@ class OpxRelPackage(object):
                     upper_bound,
                     upper_bound_inclusive)
 
-
             return OpxRelPackage(name, restriction)
             return OpxRelPackage(name, restriction)
 
