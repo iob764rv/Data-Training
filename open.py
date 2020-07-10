@@ -268,7 +268,6 @@ class OpxRelPackage(object):
             return OpxRelPackage(name, restriction)
 
 
-
         name = elem.get('name')
 
         version = elem.get('version')
