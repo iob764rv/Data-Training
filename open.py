@@ -178,7 +178,6 @@ class OpxRelPackage(object):
     def __init__(self, name, restriction):
 
         self.name = name
-
         self.restriction = restriction
 
     @classmethod
