@@ -80,7 +80,6 @@ s += "%s%02d%02d" % (sign, hh, mm)
 
 class OpxRelPackageRestriction(object):
    
-
     def __init__(self, lower_bound,
 
                  lower_bound_inclusive,
