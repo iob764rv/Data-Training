@@ -200,7 +200,6 @@ class OpxRelPackage(object):
                 if relation == '<<':
 
                     lower_bound = None
-
                     lower_bound_inclusive = False
 
                     upper_bound = version
