@@ -201,7 +201,6 @@ class OpxRelPackage(object):
 
                     lower_bound = None
                     lower_bound_inclusive = False
-
                     upper_bound = version
 
                     upper_bound_inclusive = False
