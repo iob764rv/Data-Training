@@ -136,9 +136,7 @@ class OpxRelPackageRestriction(object):
    
     def __str__(self):
 
-
         # special case equality
-
         if (self.lower_bound_inclusive and
 
                 self.lower_bound == self.upper_bound and
