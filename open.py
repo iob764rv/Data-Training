@@ -122,7 +122,6 @@ class OpxRelPackageRestriction(object):
         if self.upper_bound is not None:
 
             if self.upper_bound_inclusive:
-
                 restrictions.append('<=' + self.upper_bound)
 
             else:
