@@ -174,7 +174,6 @@ class OpxRelPackage(object):
     def fromElement(cls, elem):
 
         if elem.text:
-
             match = re.match(r'\A([a-zA-Z0-9][a-zA-Z0-9+-.]+)\s*(?:\(\s*(<<|<=|!=|=|>=|>>)\s*([0-9][a-z0-9+-.:~]+)\s*\))?\s*\Z', elem.text)
 
             if not match:
