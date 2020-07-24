@@ -105,7 +105,6 @@ class OpxRelPackageRestriction(object):
             return ['!=' + self.lower_bound]
 
 
-
         restrictions = list()
 
         if self.lower_bound is not None:
