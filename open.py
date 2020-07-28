@@ -221,7 +221,6 @@ class OpxRelPackage(object):
 
                 elif relation == '>=':
                     lower_bound = version
-
                     lower_bound_inclusive = True
                     upper_bound = None
                     upper_bound_inclusive = False
