@@ -289,5 +289,4 @@ class OpxRelPackage(object):
             return OpxRelPackage(name, restriction)
 
 
-
         raise ValueError("Can't parse version: ->%s<-" % version)
