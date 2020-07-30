@@ -70,6 +70,7 @@ def art8601_format(dt):
         else:
             sign = '+'
         hh, mm = divmod(utc_offset.seconds, 3600)
+      
 s += "%s%02d%02d" % (sign, hh, mm)
     else:
         s += "Z"
