@@ -284,7 +284,6 @@ class OpxRelPackage(object):
                 False,
 
                 match.group(1),
-
                 False)
             return OpxRelPackage(name, restriction)
 
