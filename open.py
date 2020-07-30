@@ -253,3 +253,42 @@ class OpxRelPackage(object):
                 match.group(4) == ']')
 
             return OpxRelPackage(name, restriction)
+ match = re.match(r'\A\[([0-9][a-z0-9+-.:~]+)\]\Z', version)
+
+        if match:
+
+            restriction = OpxRelPackageRestriction(
+
+                match.group(1),
+
+                True,
+
+                match.group(1),
+
+                True)
+
+            return OpxRelPackage(name, restriction)
+
+
+
+        # special case inequality
+
+        match = re.match(r'\A\(([0-9][a-z0-9+-.:~]+)\)\Z', version)
+
+        if match:
+
+            restriction = OpxRelPackageRestriction(
+
+                match.group(1),
+
+                False,
+
+                match.group(1),
+
+                False)
+
+            return OpxRelPackage(name, restriction)
+
+
+
+        raise ValueError("Can't parse version: ->%s<-" % version)
