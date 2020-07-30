@@ -280,7 +280,6 @@ class OpxRelPackage(object):
             restriction = OpxRelPackageRestriction(
 
                 match.group(1),
-
                 False,
 
                 match.group(1),
