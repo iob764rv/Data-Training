@@ -262,9 +262,7 @@ class OpxRelPackage(object):
                 match.group(1),
 
                 True,
-
                 match.group(1),
-
                 True)
 
             return OpxRelPackage(name, restriction)
