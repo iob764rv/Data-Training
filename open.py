@@ -267,9 +267,6 @@ class OpxRelPackage(object):
 
             return OpxRelPackage(name, restriction)
 
-
-        # special case inequality
-
         match = re.match(r'\A\(([0-9][a-z0-9+-.:~]+)\)\Z', version)
 
         if match:
