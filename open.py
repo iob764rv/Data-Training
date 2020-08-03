@@ -280,3 +280,50 @@ class OpxRelPackage(object):
             return OpxRelPackage(name, restriction)
 
         raise ValueError("Can't parse version: ->%s<-" % version)
+      
+def toElement(self):
+
+        """
+
+        Return :class:`etree.Element` representing :class:`OpxRelPackage`
+
+        :returns: :class:`etree.Element`
+
+        """
+
+
+
+        attributes = collections.OrderedDict()
+
+        attributes['name'] = self.name
+
+        if self.restriction:
+
+            attributes['version'] = str(self.restriction)
+
+
+
+        return E.package(attributes)
+
+
+
+    def toDebian(self):
+
+        """
+
+        Return list of package name+version restrictions in Debian format
+
+        :returns: list of version specifications for this package
+
+        """
+
+        if self.restriction is not None:
+
+            return ["{}({})".format(self.name, x)
+
+                    for x in self.restriction.toDebian()]
+
+        else:
+
+            return [self.name]
+
