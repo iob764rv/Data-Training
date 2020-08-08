@@ -316,7 +316,6 @@ def toElement(self):
         :returns: list of version specifications for this package
 
         """
-
         if self.restriction is not None:
 
             return ["{}({})".format(self.name, x)
