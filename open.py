@@ -302,7 +302,6 @@ def toElement(self):
             attributes['version'] = str(self.restriction)
 
 
-
         return E.package(attributes)
 
 
