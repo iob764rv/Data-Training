@@ -304,7 +304,6 @@ def toElement(self):
         return E.package(attributes)
 
 
-
     def toDebian(self):
 
         """
