@@ -293,7 +293,6 @@ def toElement(self):
 
 
         attributes = collections.OrderedDict()
-
         attributes['name'] = self.name
 
         if self.restriction:
