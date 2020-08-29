@@ -296,7 +296,6 @@ def toElement(self):
         attributes['name'] = self.name
 
         if self.restriction:
-
             attributes['version'] = str(self.restriction)
 
         return E.package(attributes)
