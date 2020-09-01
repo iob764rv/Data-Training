@@ -288,7 +288,7 @@ def toElement(self):
         :returns: :class:`etree.Element`
 
         """
-
+      
         attributes = collections.OrderedDict()
         attributes['name'] = self.name
 
