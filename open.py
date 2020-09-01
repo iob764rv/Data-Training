@@ -302,7 +302,6 @@ def toElement(self):
 
         """
         Return list of package name+version restrictions in Debian format
-
         :returns: list of version specifications for this package
 
         """
