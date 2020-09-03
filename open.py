@@ -257,7 +257,6 @@ class OpxRelPackage(object):
         if match:
 
             restriction = OpxRelPackageRestriction(
-
                 match.group(1),
 
                 True,
