@@ -252,6 +252,7 @@ class OpxRelPackage(object):
                 match.group(4) == ']')
 
             return OpxRelPackage(name, restriction)
+         
  match = re.match(r'\A\[([0-9][a-z0-9+-.:~]+)\]\Z', version)
 
         if match:
