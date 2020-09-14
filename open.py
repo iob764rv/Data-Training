@@ -281,7 +281,6 @@ class OpxRelPackage(object):
         raise ValueError("Can't parse version: ->%s<-" % version)
       
 def toElement(self):
-
         """
 
         Return :class:`etree.Element` representing :class:`OpxRelPackage`
