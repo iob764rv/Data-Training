@@ -304,7 +304,6 @@ def toElement(self):
 
         """
         if self.restriction is not None:
-
             return ["{}({})".format(self.name, x)
                     for x in self.restriction.toDebian()]
         else:
