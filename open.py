@@ -309,4 +309,3 @@ def toElement(self):
         else:
 
             return [self.name]
-
