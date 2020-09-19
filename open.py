@@ -307,5 +307,4 @@ def toElement(self):
             return ["{}({})".format(self.name, x)
                     for x in self.restriction.toDebian()]
         else:
-
             return [self.name]
