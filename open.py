@@ -281,7 +281,6 @@ class OpxRelPackage(object):
       
 def toElement(self):
         """
-
         Return :class:`etree.Element` representing :class:`OpxRelPackage`
         :returns: :class:`etree.Element`
 
