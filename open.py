@@ -293,7 +293,6 @@ def toElement(self):
         return E.package(attributes)
 
     def toDebian(self):
-
         """
         Return list of package name+version restrictions in Debian format
         :returns: list of version specifications for this package
