@@ -312,3 +312,11 @@ def toElement(self):
             s += " "
             s += str(self.restriction)
         return s
+
+"class OpxRelPackageList(object):
+    """
+    Defines a list of packages, each one being an :class:`OpxRelPackage`
+    """
+ "   def __init__(self, package_list, no_package_filter=False):
+  "      self.packages = package_list
+   "     self.no_package_filter = no_package_filter
