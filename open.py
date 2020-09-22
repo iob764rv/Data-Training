@@ -302,3 +302,13 @@ def toElement(self):
                     for x in self.restriction.toDebian()]
         else:
             return [self.name]
+         
+   def __str__(self):
+        """
+        Override str method for a pretty format of the data members.
+        """
+        s = self.name
+        if self.restriction is not None:
+            s += " "
+            s += str(self.restriction)
+        return s
