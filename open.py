@@ -335,3 +335,17 @@ def toElement(self):
   "          package_list.append(OpxRelPackage.fromElement(package_elem))
 
   "      return OpxRelPackageList(package_list, no_package_filter)
+ "def toElement(self):
+        """
+        Return :class:`etree.Element` representing :class:`OpxRelPackageList`
+        :returns: :class:`etree.Element`
+        """
+  "      elem = E.package_list()
+
+   "     if self.no_package_filter:
+    "        elem.append(E.no_package_filter())
+
+     "   for package in self.packages:
+      "      elem.append(package.toElement())
+
+       " return elem
