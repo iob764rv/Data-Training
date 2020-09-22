@@ -141,7 +141,6 @@ class OpxRelPackageRestriction(object):
         # special case inequality
 
         if (not self.lower_bound_inclusive and
-
                 self.lower_bound == self.upper_bound and
                 not self.upper_bound_inclusive):
             return '(' + self.lower_bound + ')'
