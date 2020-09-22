@@ -320,3 +320,18 @@ def toElement(self):
  "   def __init__(self, package_list, no_package_filter=False):
   "      self.packages = package_list
    "     self.no_package_filter = no_package_filter
+ "def fromElement(cls, element):
+        """
+        Construct :class:`OpxRelPackageList` object from :class:`etree.Element`
+        """
+        # no_package_filter is local as this is a classmethod
+  "      if element.find('no_package_filter') is not None:
+   "         no_package_filter = True
+    "    else:
+     "       no_package_filter = False
+
+"        package_list = []
+ "       for package_elem in element.findall('package'):
+  "          package_list.append(OpxRelPackage.fromElement(package_elem))
+
+  "      return OpxRelPackageList(package_list, no_package_filter)
