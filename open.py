@@ -125,7 +125,6 @@ class OpxRelPackageRestriction(object):
                 restrictions.append('<<' + self.upper_bound)
 
         return restrictions
-
    
     def __str__(self):
 
