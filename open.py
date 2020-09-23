@@ -313,7 +313,7 @@ def toElement(self):
             s += str(self.restriction)
         return s
 
-"class OpxRelPackageList(object):
+class OpxRelPackageList(object):
     """
     Defines a list of packages, each one being an :class:`OpxRelPackage`
     """
