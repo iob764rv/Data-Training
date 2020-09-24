@@ -325,7 +325,7 @@ class OpxRelPackageList(object):
         Construct :class:`OpxRelPackageList` object from :class:`etree.Element`
         """
         # no_package_filter is local as this is a classmethod
-  "      if element.find('no_package_filter') is not None:
+        if element.find('no_package_filter') is not None:
    "         no_package_filter = True
     "    else:
      "       no_package_filter = False
