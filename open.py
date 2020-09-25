@@ -330,7 +330,7 @@ class OpxRelPackageList(object):
         else:
             no_package_filter = False
 
-"        package_list = []
+        package_list = []
  "       for package_elem in element.findall('package'):
   "          package_list.append(OpxRelPackage.fromElement(package_elem))
 
