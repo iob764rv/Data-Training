@@ -328,7 +328,7 @@ class OpxRelPackageList(object):
         if element.find('no_package_filter') is not None:
             no_package_filter = True
         else:
-     "       no_package_filter = False
+            no_package_filter = False
 
 "        package_list = []
  "       for package_elem in element.findall('package'):
