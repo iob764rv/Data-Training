@@ -327,7 +327,7 @@ class OpxRelPackageList(object):
         # no_package_filter is local as this is a classmethod
         if element.find('no_package_filter') is not None:
             no_package_filter = True
-    "    else:
+        else:
      "       no_package_filter = False
 
 "        package_list = []
