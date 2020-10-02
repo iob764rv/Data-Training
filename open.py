@@ -348,4 +348,4 @@ class OpxRelPackageList(object):
      "   for package in self.packages:
       "      elem.append(package.toElement())
 
-       " return elem
+        return elem
