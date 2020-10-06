@@ -345,7 +345,7 @@ class OpxRelPackageList(object):
    "     if self.no_package_filter:
     "        elem.append(E.no_package_filter())
 
-     "   for package in self.packages:
+        for package in self.packages:
             elem.append(package.toElement())
 
         return elem
