@@ -340,7 +340,7 @@ class OpxRelPackageList(object):
         Return :class:`etree.Element` representing :class:`OpxRelPackageList`
         :returns: :class:`etree.Element`
         """
-  "      elem = E.package_list()
+        elem = E.package_list()
 
    "     if self.no_package_filter:
     "        elem.append(E.no_package_filter())
