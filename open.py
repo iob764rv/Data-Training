@@ -342,7 +342,7 @@ class OpxRelPackageList(object):
         """
         elem = E.package_list()
 
-   "     if self.no_package_filter:
+        if self.no_package_filter:
             elem.append(E.no_package_filter())
 
         for package in self.packages:
