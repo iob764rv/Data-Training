@@ -335,6 +335,7 @@ class OpxRelPackageList(object):
             package_list.append(OpxRelPackage.fromElement(package_elem))
 
         return OpxRelPackageList(package_list, no_package_filter)
+   
  def toElement(self):
         """
         Return :class:`etree.Element` representing :class:`OpxRelPackageList`
