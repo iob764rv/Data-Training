@@ -366,9 +366,11 @@ class OpxRelPackageList(object):
 
     @classmethod
     def fromElement(cls, elem):
-        """
+"""
         Construct :class:`OpxRelPackageSet` object from :class:`etree.Element`
-        """
+"""       
+"""
+
 
         name = elem.find('name').text
         kind = elem.find('type').text
@@ -407,12 +409,13 @@ class OpxRelPackageList(object):
 
         return OpxRelPackageSet(name, kind, default_solver, platform,
                                 flavor, package_sources, package_lists)
+   """                             
 
     def toElement(self):
-        """
+        
         Return :class:`etree.Element` representing :class:`OpxRelPackageSet`
         :returns: :class:`etree.Element`
-        """
+        
 
         elem = E.package_set(
             E.name(self.name),
