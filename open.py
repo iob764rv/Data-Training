@@ -409,10 +409,10 @@ class OpxRelPackageList(object):
 
         return OpxRelPackageSet(name, kind, default_solver, platform,
                                 flavor, package_sources, package_lists)
-   """                             
+                           
 
     def toElement(self):
-        
+        """
         Return :class:`etree.Element` representing :class:`OpxRelPackageSet`
         :returns: :class:`etree.Element`
         
