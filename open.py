@@ -349,3 +349,96 @@ class OpxRelPackageList(object):
             elem.append(package.toElement())
 
         return elem
+"""class OpxRelPackageSet(object):
+    """
+    Defines a package set, including a list of packages,
+     and where to find/get them.
+    """
+    def __init__(self, name, kind, default_solver, platform, flavor,
+                    package_sources, package_lists):
+        self.name = name
+        self.kind = kind
+        self.default_solver = default_solver
+        self.platform = platform
+        self.flavor = flavor
+        self.package_sources = package_sources
+        self.package_lists = package_lists
+
+    @classmethod
+    def fromElement(cls, elem):
+        """
+        Construct :class:`OpxRelPackageSet` object from :class:`etree.Element`
+        """
+
+        name = elem.find('name').text
+        kind = elem.find('type').text
+
+        if elem.find('default_solver') is not None:
+            default_solver = True
+        else:
+            default_solver = False
+
+        _tmp = elem.find('platform')
+        if _tmp is not None:
+            platform = _tmp.text
+        else:
+            platform = None
+
+        _tmp = elem.find('flavor')
+        if _tmp is not None:
+            flavor = _tmp.text
+        else:
+            flavor = None
+
+        package_sources = []
+        for package_desc_elem in elem.findall('package_desc'):
+            package_sources.append(
+                opx_get_packages.OpxPackageSource(
+                    package_desc_elem.find('url').text,
+                    package_desc_elem.find('distribution').text,
+                    package_desc_elem.find('component').text,
+                )
+            )
+
+        package_lists = []
+        for package_list_elem in elem.findall('package_list'):
+            package_lists.append(OpxRelPackageList.fromElement(
+                                                        package_list_elem))
+
+        return OpxRelPackageSet(name, kind, default_solver, platform,
+                                flavor, package_sources, package_lists)
+
+    def toElement(self):
+        """
+        Return :class:`etree.Element` representing :class:`OpxRelPackageSet`
+        :returns: :class:`etree.Element`
+        """
+
+        elem = E.package_set(
+            E.name(self.name),
+            E.type(self.kind)
+        )
+
+        if self.default_solver:
+            elem.append(E.default_solver())
+
+        if self.platform is not None:
+            elem.append(E.platform(self.platform))
+
+        if self.flavor is not None:
+            elem.append(E.flavor(self.flavor))
+
+        for package_source in self.package_sources:
+            elem.append(
+                E.package_desc(
+                    E.url(package_source.url),
+                    E.distribution(package_source.distribution),
+                    E.component(package_source.component),
+                )
+            )
+
+        elem.extend([package_list.toElement()
+                        for package_list in self.package_lists])
+
+        return elem
+"""
