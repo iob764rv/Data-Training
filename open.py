@@ -415,8 +415,10 @@ class OpxRelPackageList(object):
         """
         Return :class:`etree.Element` representing :class:`OpxRelPackageSet`
         :returns: :class:`etree.Element`
+       
+        """
         
-
+"""
         elem = E.package_set(
             E.name(self.name),
             E.type(self.kind)
@@ -443,5 +445,6 @@ class OpxRelPackageList(object):
         elem.extend([package_list.toElement()
                         for package_list in self.package_lists])
 
-        return elem
 """
+        return elem
+
