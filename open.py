@@ -425,9 +425,9 @@ class OpxRelPackageList(object):
         )
 
         if self.default_solver:
-        """
+        
             elem.append(E.default_solver())
-
+"""
         if self.platform is not None:
             elem.append(E.platform(self.platform))
 
