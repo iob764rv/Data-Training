@@ -418,12 +418,12 @@ class OpxRelPackageList(object):
        
         """
         
-"""
+
         elem = E.package_set(
             E.name(self.name),
             E.type(self.kind)
         )
-
+"""
         if self.default_solver:
             elem.append(E.default_solver())
 
