@@ -433,7 +433,7 @@ class OpxRelPackageList(object):
             
         if self.flavor is not None:
             elem.append(E.flavor(self.flavor))
-"""
+
         for package_source in self.package_sources:
      """0
             elem.append(
