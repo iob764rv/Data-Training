@@ -438,7 +438,7 @@ class OpxRelPackageList(object):
      """0
             elem.append(
                 E.package_desc(
-                """2
+               
                     E.url(package_source.url),
                     E.distribution(package_source.distribution),
                     E.component(package_source.component),
