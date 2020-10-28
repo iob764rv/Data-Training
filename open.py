@@ -436,11 +436,12 @@ class OpxRelPackageList(object):
 
         for package_source in self.package_sources:
          
-     """
-            elem.append(
+     """0
+  """          elem.append(
                 E.package_desc(
-               
+               """1
                     E.url(package_source.url),
+                    """2
                     E.distribution(package_source.distribution),
                     E.component(package_source.component),
                 )
