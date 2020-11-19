@@ -448,7 +448,7 @@ class OpxRelPackageList(object):
        """     )
 
  """1       elem.extend([package_list.toElement()
-    """2                    for package_list in self.package_lists])
+                    for package_list in self.package_lists])
 
 """
         return elem
