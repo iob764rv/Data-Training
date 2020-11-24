@@ -444,7 +444,7 @@ class OpxRelPackageList(object):
                   E.distribution(package_source.distribution),
                  E.component(package_source.component),
 
-                )"""2
+                )
        )"""1
             
   elem.extend([package_list.toElement()
