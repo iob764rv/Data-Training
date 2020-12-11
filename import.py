@@ -15,3 +15,5 @@ import tensorflow as tf
   #for h in H:
    # if len(h.shape) != 4:
     #  raise ValueError("H must be nearest-neighbor.")
+       # h_shp = tf.shape(h)
+    #h_r = tf.reshape(h, (h_shp[0] * h_shp[1], h_shp[2] * h_shp[3]))
