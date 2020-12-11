@@ -11,3 +11,7 @@ import tensorflow as tf
   #  step_size = -1.0 * step_size
   #else:
    # step_size = 1.j * step_size
+  #  eH = []
+  #for h in H:
+   # if len(h.shape) != 4:
+    #  raise ValueError("H must be nearest-neighbor.")
