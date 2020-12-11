@@ -8,8 +8,8 @@ def trotter_prepare_gates(H, step_size, num_sites, euclidean):
   #step_size = tf.cast(step_size, H[0].dtype)
 
     if euclidean:
-  #  step_size = -1.0 * step_size
-  #else:
+    step_size = -1.0 * step_size
+  else:
    # step_size = 1.j * step_size
   #  eH = []
   #for h in H:
