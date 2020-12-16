@@ -10,7 +10,7 @@ def trotter_prepare_gates(H, step_size, num_sites, euclidean):
     if euclidean:
     step_size = -1.0 * step_size
   else:
-   # step_size = 1.j * step_size
+    step_size = 1.j * step_size
   #  eH = []
   #for h in H:
    # if len(h.shape) != 4:
