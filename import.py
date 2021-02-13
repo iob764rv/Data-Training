@@ -1,5 +1,5 @@
 import tensorflow as tf
-
+from functools import reduce
 
 def trotter_prepare_gates(H, step_size, num_sites, euclidean):
   if not len(H) == num_sites - 1:
