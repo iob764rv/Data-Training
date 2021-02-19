@@ -2,6 +2,8 @@ import tensorflow as tf
 from functools import reduce
 import sys
 import tensornetwork
+from examples.wavefunctions.trotter import trotter_prepare_gates
+
 
 def trotter_prepare_gates(H, step_size, num_sites, euclidean):
   if not len(H) == num_sites - 1:
