@@ -34,3 +34,10 @@ def trotter_prepare_gates(H, step_size, num_sites, euclidean):
       eh_odd[n] = eh
 
   return [eh_even, eh_odd]
+
+
+def inner(psi1, psi2):
+  """Computes the inner product <psi1|psi2>.
+    inner_product: The vector inner product.
+  """
+  return tf.reduce_sum(tf.math.conj(psi1) * psi2)
