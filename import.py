@@ -54,7 +54,7 @@ def apply_op(psi, op, n1, pbc=False):
   return n_res.tensor
 
 def _evolve_trotter_gates_defun(psi,
-  #                              layers,
+                                layers,
    #                             step_size,
     #                            num_steps,
      #                           euclidean=False,
