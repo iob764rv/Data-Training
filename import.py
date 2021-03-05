@@ -61,4 +61,26 @@ def _evolve_trotter_gates_defun(psi,
                                 callback=None):
   return _evolve_trotter_gates(
   #    psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)
+    
+#    def _evolve_trotter_gates(psi,
+ #                         layers,
+  #                        step_size,
+   #                       num_steps,
+    #                      euclidean=False,
+   #                       callback=None):
+  """Evolve an initial wavefunction psi via gates specified in `layers`.
+  If the evolution is euclidean, the wavefunction will be normalized
+  after each step.
+  """
+  #t = 0.0
+  #for i in range(num_steps):
+   # psi = apply_circuit(psi, layers)
+   # if euclidean:
+    #  psi = tf.divide(psi, tf.norm(psi))
+   # t += step_size
+  #  if callback is not None:
+ #     callback(psi, t, i)
+
+#  return psi, t
+
 
