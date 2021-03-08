@@ -67,7 +67,7 @@ def _evolve_trotter_gates_defun(psi,
   #                        step_size,
    #                       num_steps,
     #                      euclidean=False,
-   #                       callback=None):
+                          callback=None):
   """Evolve an initial wavefunction psi via gates specified in `layers`.
   If the evolution is euclidean, the wavefunction will be normalized
   after each step.
