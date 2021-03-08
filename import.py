@@ -63,7 +63,7 @@ def _evolve_trotter_gates_defun(psi,
       psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)
     
     def _evolve_trotter_gates(psi,
- #                         layers,
+                          layers,
   #                        step_size,
    #                       num_steps,
     #                      euclidean=False,
