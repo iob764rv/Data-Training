@@ -72,7 +72,7 @@ def _evolve_trotter_gates_defun(psi,
   If the evolution is euclidean, the wavefunction will be normalized
   after each step.
   """
-  #t = 0.0
+  t = 0.0
   #for i in range(num_steps):
    # psi = apply_circuit(psi, layers)
    # if euclidean:
