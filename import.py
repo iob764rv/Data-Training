@@ -74,7 +74,7 @@ def _evolve_trotter_gates_defun(psi,
   """
   t = 0.0
   for i in range(num_steps):
-   # psi = apply_circuit(psi, layers)
+    psi = apply_circuit(psi, layers)
    # if euclidean:
     #  psi = tf.divide(psi, tf.norm(psi))
    # t += step_size
