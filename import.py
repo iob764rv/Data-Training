@@ -79,7 +79,7 @@ def _evolve_trotter_gates_defun(psi,
       psi = tf.divide(psi, tf.norm(psi))
       
       t += step_size
-    if callback is not None:
+      if callback is not None:
       callback(psi, t, i)
 
   return psi, t
