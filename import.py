@@ -80,7 +80,7 @@ def _evolve_trotter_gates_defun(psi,
       
       t += step_size
     if callback is not None:
- #     callback(psi, t, i)
+      callback(psi, t, i)
 
   return psi, t
 
