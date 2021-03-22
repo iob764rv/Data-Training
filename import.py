@@ -84,4 +84,28 @@ def _evolve_trotter_gates_defun(psi,
 
   return psi, t
 
+def evolve_trotter_defun(psi,
+                         H,
+                         step_size,
+                         num_steps,
+                         euclidean=False,
+                         callback=None,
+                         batch_size=1):
+  
+   t = 0.0
+  for i in range(n_batches):
+#    psi, t_b = _evolve_trotter_gates_defun(
+    #    psi, layers, step_size, batch_size, euclidean=euclidean, callback=None)
+   # t += t_b
+  #  if callback is not None:
+ #     callback(psi, t, (i + 1) * batch_size - 1)
+
+#  if rem > 0:
+#    psi, t_b = _evolve_trotter_gates_defun(
+  #      psi, layers, step_size, rem, euclidean=euclidean, callback=None)
+ #   t += t_b
+
+  return psi, t
+
+
 
