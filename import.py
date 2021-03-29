@@ -101,7 +101,7 @@ def evolve_trotter_defun(psi,
  #     callback(psi, t, (i + 1) * batch_size - 1)
 
   if rem > 0:
-#    psi, t_b = _evolve_trotter_gates_defun(
+    psi, t_b = _evolve_trotter_gates_defun(
   #      psi, layers, step_size, rem, euclidean=euclidean, callback=None)
     t += t_b
 
