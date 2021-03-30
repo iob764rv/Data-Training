@@ -35,7 +35,6 @@ def trotter_prepare_gates(H, step_size, num_sites, euclidean):
 
   return [eh_even, eh_odd]
 
-
 def inner(psi1, psi2):
   """Computes the inner product <psi1|psi2>.
     inner_product: The vector inner product.
@@ -99,6 +98,7 @@ def evolve_trotter_defun(psi,
     t += t_b
     if callback is not None:
  #     callback(psi, t, (i + 1) * batch_size - 1)
+
 
   if rem > 0:
     psi, t_b = _evolve_trotter_gates_defun(
