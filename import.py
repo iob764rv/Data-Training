@@ -91,13 +91,13 @@ def evolve_trotter_defun(psi,
                          euclidean=False,
                          callback=None,
                          batch_size=1):
-  
+
    t = 0.0
   for i in range(n_batches):
     psi, t_b = _evolve_trotter_gates_defun(
         psi, layers, step_size, batch_size, euclidean=euclidean, callback=None)
     t += t_b
-  #  if callback is not None:
+    if callback is not None:
  #     callback(psi, t, (i + 1) * batch_size - 1)
 
   if rem > 0:
