@@ -100,7 +100,7 @@ def evolve_trotter_defun(psi,
       callback(psi, t, (i + 1) * batch_size - 1)
 def _evolve_trotter_gates_defun(psi,
                                 layers,
-                                step_size,
+                        #        step_size,
                                 num_steps,
                                 euclidean=False,
                                 callback=None):
