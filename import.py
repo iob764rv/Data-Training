@@ -108,7 +108,7 @@ def _evolve_trotter_gates_defun(psi,
       psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)
 
 
-#def apply_circuit(psi, layers):
+def apply_circuit(psi, layers):
 
 #  if rem > 0:
  #   psi, t_b = _evolve_trotter_gates_defun(
@@ -148,5 +148,5 @@ def _evolve_trotter_gates_defun(psi,
  # n_psi = reduce(tensornetwork.contract_between, nodes)
   #n_psi.reorder_edges(site_edges)
 
-  #return n_psi.tensor
+  return# n_psi.tensor
 
