@@ -113,7 +113,7 @@ def apply_circuit(psi, layers):
   if rem > 0:
     psi, t_b = _evolve_trotter_gates_defun(
   #      psi, layers, step_size, rem, euclidean=euclidean, callback=None)
-   # t += t_b
+    t += t_b
 
   #return psi, t
 
