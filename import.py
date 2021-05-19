@@ -115,7 +115,7 @@ def apply_circuit(psi, layers):
   #      psi, layers, step_size, rem, euclidean=euclidean, callback=None)
     t += t_b
 
-  #return psi, t
+  return psi, t
 
  num_sites = len(psi.shape)
 
