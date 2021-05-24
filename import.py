@@ -120,7 +120,7 @@ def apply_circuit(psi, layers):
  num_sites = len(psi.shape)
 
   n_psi = tensornetwork.Node(psi, backend="tensorflow")
-  #site_edges = n_psi.get_all_edges()
+  site_edges = n_psi.get_all_edges()
   #nodes = [n_psi]
 
 #  for gates in layers:
