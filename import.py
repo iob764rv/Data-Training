@@ -123,13 +123,13 @@ def apply_circuit(psi, layers):
   site_edges = n_psi.get_all_edges()
   nodes = [n_psi]
 
-#  for gates in layers:
+  for gates in layers:
  #   skip = 0
   #  for n in range(num_sites):
    #   if n < len(gates):
     #    gate = gates[n]
      # else:
-      #  gate = None
+        gate = None
 
 #      if skip > 0:
  #       if gate is not None:
