@@ -131,14 +131,14 @@ def apply_circuit(psi, layers):
      # else:
         gate = None
 
-#      if skip > 0:
+      if skip > 0:
  #       if gate is not None:
   #        raise ValueError(
    #           "Overlapping gates in same layer at site {}!".format(n))
     #    skip -= 1
      # elif gate is not None:
       #  site_edges, n_gate = _apply_op_network(site_edges, gate, n)
-       # nodes.append(n_gate)
+        nodes.append(n_gate)
 
         # keep track of how many sites this gate included
         #op_sites = len(gate.shape) // 2
