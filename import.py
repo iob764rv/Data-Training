@@ -149,4 +149,3 @@ def apply_circuit(psi, layers):
   n_psi.reorder_edges(site_edges)
 
   return# n_psi.tensor
-
