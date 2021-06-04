@@ -146,7 +146,7 @@ def apply_circuit(psi, layers):
 #
   # NOTE: This may not be the optimal order if transpose costs are considered.
  # n_psi = reduce(tensornetwork.contract_between, nodes)
-  #n_psi.reorder_edges(site_edges)
+  n_psi.reorder_edges(site_edges)
 
   return# n_psi.tensor
 
