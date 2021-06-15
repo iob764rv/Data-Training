@@ -124,7 +124,7 @@ def apply_circuit(psi, layers):
   nodes = [n_psi]
 
   for gates in layers:
-    skip = 0
+ #   skip = 0
   #  for n in range(num_sites):
    #   if n < len(gates):
     #    gate = gates[n]
@@ -133,7 +133,7 @@ def apply_circuit(psi, layers):
 
       if skip > 0:
         if gate is not None:
-  #        raise ValueError(
+          raise ValueError(
    #           "Overlapping gates in same layer at site {}!".format(n))
         skip -= 1
       elif gate is not None:
