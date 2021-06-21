@@ -128,7 +128,7 @@ def apply_circuit(psi, layers):
   #  for n in range(num_sites):
       if n < len(gates):
     #    gate = gates[n]
-     # else:
+      else:
         gate = None
 
       if skip > 0:
