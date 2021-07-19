@@ -151,7 +151,7 @@ def apply_circuit(psi, layers):
   return# n_psi.tensor
 
   
-#def _apply_op_network(site_edges, op, n1, pbc=False):
+def _apply_op_network(site_edges, op, n1, pbc=False):
  # N = len(site_edges)
   #op_sites = len(op.shape) // 2
 #  n_op = tensornetwork.Node(op, backend="tensorflow")
