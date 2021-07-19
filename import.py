@@ -149,3 +149,35 @@ def apply_circuit(psi, layers):
   n_psi.reorder_edges(site_edges)
 
   return# n_psi.tensor
+
+  
+#def _apply_op_network(site_edges, op, n1, pbc=False):
+ # N = len(site_edges)
+  #op_sites = len(op.shape) // 2
+#  n_op = tensornetwork.Node(op, backend="tensorflow")
+ # for m in range(op_sites):
+  #  target_site = (n1 + m) % N if pbc else n1 + m
+   # tensornetwork.connect(n_op[op_sites + m], site_edges[target_site])
+    #site_edges[target_site] = n_op[m]
+  #return site_edges, n_op
+
+
+#def expval(psi, op, n1, pbc=False):
+#for i in range(len(site_edges)):
+ #   tensornetwork.connect(site_edges[i], n_psi_conj[i])
+
+  #res = n_psi_conj @ n_op_psi
+
+  #return res.tensor
+
+
+#def evolve_trotter(psi,
+ #                  H,
+  #                 step_size,
+   #                num_steps,
+    #               euclidean=False,
+     #              callback=None):
+#  num_sites = len(psi.shape)
+ # layers = trotter_prepare_gates(H, step_size, num_sites, euclidean)
+  #return _evolve_trotter_gates(
+   #   psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)   
