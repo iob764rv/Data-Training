@@ -132,7 +132,7 @@ def apply_circuit(psi, layers):
         gate = None
 
       if skip > 0:
-      #  if gate is not None:
+        if gate is not None:
           raise ValueError(
    #           "Overlapping gates in same layer at site {}!".format(n))
         skip -= 1
