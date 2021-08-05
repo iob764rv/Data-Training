@@ -42,7 +42,7 @@ def calculate_abc_trace(a, b, c):
       a[1] ^ x_node[0]
       b[1] ^ x_node[1]
       a[2] ^ b[2]
-      c = a @ x_node
+     # c = a @ x_node
       result = (c @ b).tensor
       return result + bias_var
     
