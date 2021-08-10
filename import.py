@@ -164,7 +164,7 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
 
 def expval(psi, op, n1, pbc=False):
 for i in range(len(site_edges)):
- #   tensornetwork.connect(site_edges[i], n_psi_conj[i])
+    tensornetwork.connect(site_edges[i], n_psi_conj[i])
 
   res = n_psi_conj @ n_op_psi
 
