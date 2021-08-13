@@ -176,7 +176,7 @@ def evolve_trotter(psi,
   #                 step_size,
    #                num_steps,
     #               euclidean=False,
-     #              callback=None):
+                   callback=None):
 #  num_sites = len(psi.shape)
  # layers = trotter_prepare_gates(H, step_size, num_sites, euclidean)
   return _evolve_trotter_gates(
