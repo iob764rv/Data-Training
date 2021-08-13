@@ -171,7 +171,7 @@ for i in range(len(site_edges)):
   return res.tensor
 
 
-#def evolve_trotter(psi,
+def evolve_trotter(psi,
  #                  H,
   #                 step_size,
    #                num_steps,
@@ -179,5 +179,5 @@ for i in range(len(site_edges)):
      #              callback=None):
 #  num_sites = len(psi.shape)
  # layers = trotter_prepare_gates(H, step_size, num_sites, euclidean)
-  #return _evolve_trotter_gates(
+  return _evolve_trotter_gates(
    #   psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)   
