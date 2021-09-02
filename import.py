@@ -172,7 +172,7 @@ for i in range(len(site_edges)):
 
 
 def evolve_trotter(psi,
- #                  H,
+                   H,
   #                 step_size,
                    num_steps,
     #               euclidean=False,
