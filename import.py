@@ -193,10 +193,10 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
   return site_edges, n_op
 
  def _evolve_trotter_gates_defun(psi,
-    layers,
-    step_size,
-    num_steps,
-    euclidean=False,
-    callback=None):
+#    layers,
+ #   step_size,
+  #  num_steps,
+   # euclidean=False,
+    #callback=None):
   return _evolve_trotter_gates(
       psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)
