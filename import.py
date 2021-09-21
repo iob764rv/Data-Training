@@ -184,7 +184,7 @@ def evolve_trotter(psi,
 
 def _apply_op_network(site_edges, op, n1, pbc=False):
   N = len(site_edges)
- # op_sites = len(op.shape) // 2
+  op_sites = len(op.shape) // 2
 #  n_op = tensornetwork.Node(op, backend="tensorflow")
  # for m in range(op_sites):
   #  target_site = (n1 + m) % N if pbc else n1 + m
