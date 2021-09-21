@@ -191,3 +191,12 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
    # tensornetwork.connect(n_op[op_sites + m], site_edges[target_site])
     #site_edges[target_site] = n_op[m]
   return site_edges, n_op
+
+ def _evolve_trotter_gates_defun(psi,
+    layers,
+    step_size,
+    num_steps,
+    euclidean=False,
+    callback=None):
+  return _evolve_trotter_gates(
+      psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)
