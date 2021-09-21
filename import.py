@@ -183,7 +183,7 @@ def evolve_trotter(psi,
       psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)   
 
 def _apply_op_network(site_edges, op, n1, pbc=False):
-#  N = len(site_edges)
+  N = len(site_edges)
  # op_sites = len(op.shape) // 2
 #  n_op = tensornetwork.Node(op, backend="tensorflow")
  # for m in range(op_sites):
