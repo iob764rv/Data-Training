@@ -195,7 +195,7 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
  def _evolve_trotter_gates_defun(psi,
 #    layers,
     step_size,
-  #  num_steps,
+    num_steps,
    # euclidean=False,
     #callback=None):
   return _evolve_trotter_gates(
