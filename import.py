@@ -188,7 +188,7 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
   n_op = tensornetwork.Node(op, backend="tensorflow")
  # for m in range(op_sites):
     target_site = (n1 + m) % N if pbc else n1 + m
-   # tensornetwork.connect(n_op[op_sites + m], site_edges[target_site])
+    tensornetwork.connect(n_op[op_sites + m], site_edges[target_site])
     #site_edges[target_site] = n_op[m]
   return site_edges, n_op
 
