@@ -200,3 +200,37 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
     callback=None):
   return _evolve_trotter_gates(
       psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)
+
+ def apply_circuit(psi, layers):
+#num_sites = len(psi.shape)
+
+ # n_psi = tensornetwork.Node(psi, backend="tensorflow")
+#  site_edges = n_psi.get_all_edges()
+ # nodes = [n_psi]
+
+  #for gates in layers:
+   # skip = 0
+ #   for n in range(num_sites):
+  #    if n < len(gates):
+   #     gate = gates[n]
+    #  else:
+     #   gate = None
+
+      #if skip > 0:
+      #  if gate is not None:
+       #   raise ValueError(
+        #      "Overlapping gates in same layer at site {}!".format(n))
+       # skip -= 1
+#      elif gate is not None:
+ #       site_edges, n_gate = _apply_op_network(site_edges, gate, n)
+  #      nodes.append(n_gate)
+
+        # keep track of how many sites this gate included
+   #     op_sites = len(gate.shape) // 2
+    #    skip = op_sites - 1
+
+  # NOTE: This may not be the optimal order if transpose costs are considered.
+  #n_psi = reduce(tensornetwork.contract_between, nodes)
+  #n_psi.reorder_edges(site_edges)
+
+  return n_psi.tensor
