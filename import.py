@@ -230,7 +230,7 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
     #    skip = op_sites - 1
 
   # NOTE: This may not be the optimal order if transpose costs are considered.
-  #n_psi = reduce(tensornetwork.contract_between, nodes)
+  n_psi = reduce(tensornetwork.contract_between, nodes)
   n_psi.reorder_edges(site_edges)
 
   return n_psi.tensor
