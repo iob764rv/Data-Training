@@ -226,7 +226,7 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
   #      nodes.append(n_gate)
 
         # keep track of how many sites this gate included
-   #     op_sites = len(gate.shape) // 2
+        op_sites = len(gate.shape) // 2
         skip = op_sites - 1
 
   # NOTE: This may not be the optimal order if transpose costs are considered.
