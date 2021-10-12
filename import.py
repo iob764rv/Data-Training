@@ -208,8 +208,8 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
   site_edges = n_psi.get_all_edges()
   nodes = [n_psi]
 
-  #for gates in layers:
-   # skip = 0
+  for gates in layers:
+    skip = 0
  #   for n in range(num_sites):
   #    if n < len(gates):
    #     gate = gates[n]
