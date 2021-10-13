@@ -222,7 +222,7 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
         #      "Overlapping gates in same layer at site {}!".format(n))
        # skip -= 1
 #      elif gate is not None:
- #       site_edges, n_gate = _apply_op_network(site_edges, gate, n)
+        site_edges, n_gate = _apply_op_network(site_edges, gate, n)
         nodes.append(n_gate)
 
         # keep track of how many sites this gate included
