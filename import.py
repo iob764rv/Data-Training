@@ -212,7 +212,7 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
     skip = 0
     for n in range(num_sites):
       if n < len(gates):
-   #     gate = gates[n]
+        gate = gates[n]
     #  else:
      #   gate = None
 
