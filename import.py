@@ -143,7 +143,7 @@ def apply_circuit(psi, layers):
         # keep track of how many sites this gate included
         op_sites = len(gate.shape) // 2
         skip = op_sites - 1
-#
+
   # NOTE: This may not be the optimal order if transpose costs are considered.
   n_psi = reduce(tensornetwork.contract_between, nodes)
   n_psi.reorder_edges(site_edges)
