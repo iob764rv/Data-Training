@@ -214,7 +214,7 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
       if n < len(gates):
         gate = gates[n]
       else:
-     #   gate = None
+        gate = None
 
       #if skip > 0:
       #  if gate is not None:
