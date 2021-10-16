@@ -216,7 +216,7 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
       else:
         gate = None
 
-      #if skip > 0:
+      if skip > 0:
       #  if gate is not None:
        #   raise ValueError(
         #      "Overlapping gates in same layer at site {}!".format(n))
