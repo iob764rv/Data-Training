@@ -6,4 +6,4 @@
   n_res = tensornetwork.contract_between(
       n_op, n_psi, output_edge_order=site_edges)
 
-  return n_res.
+  return n_res.tensor
