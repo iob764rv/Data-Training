@@ -1,5 +1,5 @@
 #tensor
-
+from functools import reduce
 
 
 
