@@ -2,7 +2,6 @@
 from functools import reduce
 
 def inner(psi1, psi2):
-
   return tf.reduce_sum(tf.math.conj(psi1) * psi2)
 
   n_psi = tensornetwork.Node(psi, backend="tensorflow")
