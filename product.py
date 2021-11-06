@@ -24,3 +24,19 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
     tensornetwork.connect(n_op[op_sites + m], site_edges[target_site])
     site_edges[target_site] = n_op[m]
   return site_edges, n_op
+
+
+def expval(psi, op, n1, pbc=False):
+
+  n_psi = tensornetwork.Node(psi, backend="tensorflow")
+  site_edges = n_psi.get_all_edges()
+  site_edges, n_op = _apply_op_network(site_edges, op, n1, pbc)
+  n_op_psi = n_op @ n_psi
+  n_psi_conj = tensornetwork.Node(tf.math.conj(psi), backend="tensorflow")
+  
+  for i in range(len(site_edges)):
+    tensornetwork.connect(site_edges[i], n_psi_conj[i])
+    
+  res = n_psi_conj @ n_op_psi
+  
+  return res.tensor
