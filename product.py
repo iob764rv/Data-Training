@@ -28,14 +28,14 @@ def _apply_op_network(site_edges, op, n1, pbc=False):
 
 def expval(psi, op, n1, pbc=False):
 
-  n_psi = tensornetwork.Node(psi, backend="tensorflow")
-  site_edges = n_psi.get_all_edges()
-  site_edges, n_op = _apply_op_network(site_edges, op, n1, pbc)
-  n_op_psi = n_op @ n_psi
-  n_psi_conj = tensornetwork.Node(tf.math.conj(psi), backend="tensorflow")
+#  n_psi = tensornetwork.Node(psi, backend="tensorflow")
+ # site_edges = n_psi.get_all_edges()
+  #site_edges, n_op = _apply_op_network(site_edges, op, n1, pbc)
+#  n_op_psi = n_op @ n_psi
+ # n_psi_conj = tensornetwork.Node(tf.math.conj(psi), backend="tensorflow")
   
-  for i in range(len(site_edges)):
-    tensornetwork.connect(site_edges[i], n_psi_conj[i])
+  #for i in range(len(site_edges)):
+   # tensornetwork.connect(site_edges[i], n_psi_conj[i])
     
   res = n_psi_conj @ n_op_psi
   
