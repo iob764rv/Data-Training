@@ -31,7 +31,7 @@ def expval(psi, op, n1, pbc=False):
   n_psi = tensornetwork.Node(psi, backend="tensorflow")
   site_edges = n_psi.get_all_edges()
   site_edges, n_op = _apply_op_network(site_edges, op, n1, pbc)
-#  n_op_psi = n_op @ n_psi
+  n_op_psi = n_op @ n_psi
  # n_psi_conj = tensornetwork.Node(tf.math.conj(psi), backend="tensorflow")
   
   #for i in range(len(site_edges)):
