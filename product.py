@@ -35,7 +35,7 @@ def expval(psi, op, n1, pbc=False):
   n_psi_conj = tensornetwork.Node(tf.math.conj(psi), backend="tensorflow")
   
   #for i in range(len(site_edges)):
-   # tensornetwork.connect(site_edges[i], n_psi_conj[i])
+    tensornetwork.connect(site_edges[i], n_psi_conj[i])
     
   res = n_psi_conj @ n_op_psi
   
