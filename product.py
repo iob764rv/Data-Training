@@ -39,3 +39,16 @@ def expval(psi, op, n1, pbc=False):
   res = n_psi_conj @ n_op_psi
   
   return res.tensor
+
+
+def evolve_trotter(psi,
+                   H,
+                   step_size,
+                   num_steps,
+                   euclidean=False,
+                   callback=None):
+
+  num_sites = len(psi.shape)
+  #layers = trotter_prepare_gates(H, step_size, num_sites, euclidean)
+  return _evolve_trotter_gates(
+      psi, layers, step_size, num_steps, euclidean=euclidean, callback=callback)
