@@ -79,7 +79,7 @@ def apply_circuit(psi, layers):
        # nodes.append(n_gate)
 
        
-      #  op_sites = len(gate.shape) // 2
+        op_sites = len(gate.shape) // 2
       #  skip = op_sites - 1
 
  
