@@ -71,12 +71,12 @@ def apply_circuit(psi, layers):
 
       if skip > 0:
         if gate is not None:
-      #    raise ValueError(
+          raise ValueError(
               
         skip -= 1
       elif gate is not None:
         site_edges, n_gate = _apply_op_network(site_edges, gate, n)
-       # nodes.append(n_gate)
+        nodes.append(n_gate)
 
        
         op_sites = len(gate.shape) // 2
