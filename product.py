@@ -80,7 +80,7 @@ def apply_circuit(psi, layers):
 
        
         op_sites = len(gate.shape) // 2
-      #  skip = op_sites - 1
+        skip = op_sites - 1
 
  
   n_psi = reduce(tensornetwork.contract_between, nodes)
