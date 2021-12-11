@@ -6,7 +6,7 @@ from examples.wavefunctions import wavefunctions
 
 
 @pytest.mark.parametrize("num_sites", [2, 3, 4])
-#def test_expval(num_sites):
+def test_expval(num_sites):
  # op = np.kron(np.array([[1.0, 0.0], [0.0, -1.0]]), np.eye(2)).reshape([2] * 4)
   #op = tf.convert_to_tensor(op)
 #  for j in range(num_sites):
