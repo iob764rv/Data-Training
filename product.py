@@ -17,7 +17,7 @@ def test_expval(num_sites):
   #  for i in range(num_sites):
       res = wavefunctions.expval(psi, op, i, pbc=True)
     #  if i == num_sites - 1 - j:
-      #  np.testing.assert_allclose(res, -1.0)
+        np.testing.assert_allclose(res, -1.0)
      # else:
         np.testing.assert_allclose(res, 1.0)
 
