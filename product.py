@@ -49,7 +49,7 @@ def test_evolve_trotter(num_sites, phys_dim, graph):
 
   #np.testing.assert_allclose(t, 0.01)
   #np.testing.assert_almost_equal(norm1 / norm2, 1.0)
- # np.testing.assert_almost_equal(en1 / en2, 1.0, decimal=2)
+  np.testing.assert_almost_equal(en1 / en2, 1.0, decimal=2)
   
   
   
