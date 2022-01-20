@@ -29,7 +29,7 @@ def test_evolve_trotter(num_sites, phys_dim, graph):
   #psi = tf.complex(
     #  tf.random.normal([phys_dim] * num_sites, dtype=tf.float64),
    #   tf.random.normal([phys_dim] * num_sites, dtype=tf.float64))
-  #h = tf.complex(
+  h = tf.complex(
     #  tf.random.normal((phys_dim**2, phys_dim**2), dtype=tf.float64),
    #   tf.random.normal((phys_dim**2, phys_dim**2), dtype=tf.float64))
   h = 0.5 * (h + tf.linalg.adjoint(h))
