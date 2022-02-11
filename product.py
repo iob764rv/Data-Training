@@ -37,7 +37,7 @@ def test_evolve_trotter(num_sites, phys_dim, graph):
   H = [h] * (num_sites - 1)
 
   norm1 = wavefunctions.inner(psi, psi)
-  #en1 = sum(wavefunctions.expval(psi, H[i], i) for i in range(num_sites - 1))
+  en1 = sum(wavefunctions.expval(psi, H[i], i) for i in range(num_sites - 1))
 
   #if graph:
    # psi, t = wavefunctions.evolve_trotter_defun(psi, H, 0.001, 10)
