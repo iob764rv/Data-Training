@@ -45,7 +45,7 @@ def test_evolve_trotter(num_sites, phys_dim, graph):
     psi, t = wavefunctions.evolve_trotter(psi, H, 0.001, 10)
 
   norm2 = wavefunctions.inner(psi, psi)
-#  en2 = sum(wavefunctions.expval(psi, H[i], i) for i in range(num_sites - 1))
+  en2 = sum(wavefunctions.expval(psi, H[i], i) for i in range(num_sites - 1))
 
   #np.testing.assert_allclose(t, 0.01)
   np.testing.assert_almost_equal(norm1 / norm2, 1.0)
