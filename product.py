@@ -167,15 +167,15 @@ def test_apply_op(num_sites):
                          [(2, 3, False), (2, 3, True), (5, 2, False)])
 def test_evolve_trotter(num_sites, phys_dim, graph):
   tf.random.set_seed(10)
- # psi = tf.complex(
-  #    tf.random.normal([phys_dim] * num_sites, dtype=tf.float64),
-   #   tf.random.normal([phys_dim] * num_sites, dtype=tf.float64))
+  psi = tf.complex(
+      tf.random.normal([phys_dim] * num_sites, dtype=tf.float64),
+      tf.random.normal([phys_dim] * num_sites, dtype=tf.float64))
   #h = tf.complex(
    #   tf.random.normal((phys_dim**2, phys_dim**2), dtype=tf.float64),
     #  tf.random.normal((phys_dim**2, phys_dim**2), dtype=tf.float64))
   #h = 0.5 * (h + tf.linalg.adjoint(h))
  # h = tf.reshape(h, (phys_dim, phys_dim, phys_dim, phys_dim))
-  #H = [h] * (num_sites - 1)
+  H = [h] * (num_sites - 1)
 
   norm1 = wavefunctions.inner(psi, psi)
  # en1 = sum(wavefunctions.expval(psi, H[i], i) for i in range(num_sites - 1))
