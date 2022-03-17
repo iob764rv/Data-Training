@@ -199,9 +199,9 @@ def test_evolve_trotter(num_sites, phys_dim, graph):
                          [(2, 3, False), (2, 3, True), (5, 2, False)])
 def test_evolve_trotter_euclidean(num_sites, phys_dim, graph):
   tf.random.set_seed(10)
- # psi = tf.complex(
+  psi = tf.complex(
   #    tf.random.normal([phys_dim] * num_sites, dtype=tf.float64),
-   #   tf.random.normal([phys_dim] * num_sites, dtype=tf.float64))
+      tf.random.normal([phys_dim] * num_sites, dtype=tf.float64))
   h = tf.complex(
 #      tf.random.normal((phys_dim**2, phys_dim**2), dtype=tf.float64),
       tf.random.normal((phys_dim**2, phys_dim**2), dtype=tf.float64))
