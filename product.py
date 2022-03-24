@@ -273,7 +273,7 @@ def test_evolve_trotter_euclidean(num_sites, phys_dim, graph):
 #  return [eh_even, eh_odd]
     
     
-    
+  
     
     
     
