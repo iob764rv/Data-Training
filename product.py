@@ -316,4 +316,3 @@ def test_evolve_trotter_euclidean(num_sites, phys_dim, graph):
     
     
     
-    
