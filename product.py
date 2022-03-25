@@ -220,7 +220,7 @@ def test_evolve_trotter_euclidean(num_sites, phys_dim, graph):
   norm2 = wavefunctions.inner(psi, psi)
   #en2 = sum(wavefunctions.expval(psi, H[i], i) for i in range(num_sites - 1))
 
-  #np.testing.assert_allclose(t, 1.0)
+  np.testing.assert_allclose(t, 1.0)
   #np.testing.assert_almost_equal(norm2, 1.0)
   assert en2.numpy() / norm2.numpy() < en1.numpy() / norm1.numpy()
 
