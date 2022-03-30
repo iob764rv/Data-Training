@@ -228,7 +228,7 @@ def test_evolve_trotter_euclidean(num_sites, phys_dim, graph):
     
     
     
-#def trotter_prepare_gates(H, step_size, num_sites, euclidean):
+def trotter_prepare_gates(H, step_size, num_sites, euclidean):
   """Prepare gates using 1st-order trotter decomposition.
   Currently only implemented for nearest-neighbor Hamiltonians.
   Args:
@@ -270,7 +270,7 @@ def test_evolve_trotter_euclidean(num_sites, phys_dim, graph):
 #    else:
  #     eh_odd[n] = eh
 
-#  return [eh_even, eh_odd]
+  return [eh_even, eh_odd]
     
     
   
