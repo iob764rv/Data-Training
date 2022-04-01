@@ -252,7 +252,7 @@ def trotter_prepare_gates(H, step_size, num_sites, euclidean):
   else:
     step_size = 1.j * step_size
 
-  #eH = []
+  eH = []
 #  for h in H:
  #   if len(h.shape) != 4:
   #    raise ValueError("H must be nearest-neighbor.")
