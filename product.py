@@ -271,7 +271,7 @@ def trotter_prepare_gates(H, step_size, num_sites, euclidean):
     #  eh_even[n] = eh
 #    else:
  #     eh_odd[n] = eh
-
+  
   return [eh_even, eh_odd]
     
     
