@@ -23,6 +23,7 @@ def test_expval(num_sites):
         np.testing.assert_allclose(res, 1.0)
 
         
+        
 @pytest.mark.parametrize("num_sites,phys_dim,graph",
                          [(2, 3, False), (2, 3, True), (5, 2, False)])
 def test_evolve_trotter(num_sites, phys_dim, graph):
