@@ -104,6 +104,7 @@ def expval(psi, op, n1, pbc=False):
   
   return res.tensor
 
+
 def evolve_trotter(psi,
                    H,
                    step_size,
