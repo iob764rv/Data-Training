@@ -152,6 +152,7 @@ def apply_circuit(psi, layers):
 
   return n_psi.tensor
 
+            
 @pytest.mark.parametrize("num_sites", [2, 3, 4])
 def test_apply_op(num_sites):
   psi1 = np.zeros([2] * num_sites)
