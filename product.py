@@ -30,6 +30,7 @@ def test_expval(num_sites):
 @pytest.mark.parametrize("num_sites,phys_dim,graph",
                          [(2, 3, False), (2, 3, True), (5, 2, False)])
 
+
 def test_evolve_trotter(num_sites, phys_dim, graph):
   tf.random.set_seed(10)
   psi = tf.complex(
