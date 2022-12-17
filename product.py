@@ -4,7 +4,6 @@ import tensorflow as tf
 import tensornetwork as tn
 from examples.wavefunctions import wavefunctions
 
-
 @pytest.mark.parametrize("num_sites", [2, 3, 4])
 def test_expval(num_sites):
   op = np.kron(np.array([[1.0, 0.0], [0.0, -1.0]]), np.eye(2)).reshape([2] * 4)
