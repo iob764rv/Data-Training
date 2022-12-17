@@ -168,6 +168,7 @@ def test_apply_op(num_sites):
     psi2_vec = psi2.reshape((2**num_sites,))
     psi2_vec[2**j] = 1.0
     psi2 = tf.convert_to_tensor(psi2)
+            
 
     opX = tf.convert_to_tensor(np.array([[0.0, 1.0], [1.0, 0.0]]))
     psi2 = wavefunctions.apply_op(psi2, opX, num_sites - 1 - j)
