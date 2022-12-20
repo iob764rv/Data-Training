@@ -24,7 +24,7 @@ def test_expval(num_sites):
       else:
         np.testing.assert_allclose(res, 1.0)
 
-       
+      
         
 @pytest.mark.parametrize("num_sites,phys_dim,graph",
                          [(2, 3, False), (2, 3, True), (5, 2, False)])
