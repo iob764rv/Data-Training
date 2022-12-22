@@ -75,6 +75,7 @@ def inner(psi1, psi2):
   site_edges = n_psi.get_all_edges()
   site_edges, n_op = _apply_op_network(site_edges, op, n1, pbc)
 
+  
   n_res = tensornetwork.contract_between(
       n_op, n_psi, output_edge_order=site_edges)
 
