@@ -227,6 +227,7 @@ def test_evolve_trotter_euclidean(num_sites, phys_dim, graph):
   h = 0.5 * (h + tf.linalg.adjoint(h))
   h = tf.reshape(h, (phys_dim, phys_dim, phys_dim, phys_dim))
   H = [h] * (num_sites - 1)
+            
 
   norm1 = wavefunctions.inner(psi, psi)
   en1 = sum(wavefunctions.expval(psi, H[i], i) for i in range(num_sites - 1))
