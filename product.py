@@ -167,6 +167,7 @@ def test_apply_op(num_sites):
   psi1_vec[0] = 1.0
   psi1 = tf.convert_to_tensor(psi1)
 
+            
   for j in range(num_sites):
     psi2 = np.zeros([2] * num_sites)
     psi2_vec = psi2.reshape((2**num_sites,))
