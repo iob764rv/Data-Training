@@ -23,7 +23,6 @@ def test_expval(num_sites):
         np.testing.assert_allclose(res, -1.0)
       else:
         np.testing.assert_allclose(res, 1.0)
-
       
         
 @pytest.mark.parametrize("num_sites,phys_dim,graph",
