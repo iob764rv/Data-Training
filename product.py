@@ -214,7 +214,7 @@ def test_evolve_trotter(num_sites, phys_dim, graph):
   np.testing.assert_almost_equal(norm1 / norm2, 1.0)
   np.testing.assert_almost_equal(en1 / en2, 1.0, decimal=2)
             
-            
+           
             
 @pytest.mark.parametrize("num_sites,phys_dim,graph",
                          [(2, 3, False), (2, 3, True), (5, 2, False)])
