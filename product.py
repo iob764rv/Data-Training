@@ -79,7 +79,6 @@ def inner(psi1, psi2):
 
   return n_res.tensor
 
-
 def _apply_op_network(site_edges, op, n1, pbc=False):
   
   N = len(site_edges)
