@@ -10,6 +10,7 @@ def test_expval(num_sites):
   op = tf.convert_to_tensor(op)
   
   
+  
   for j in range(num_sites): 
    psi = np.zeros([2] * num_sites)
     psi_vec = psi.reshape((2**num_sites,))
