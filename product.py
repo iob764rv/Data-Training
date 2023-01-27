@@ -9,7 +9,7 @@ def test_expval(num_sites):
   op = np.kron(np.array([[1.0, 0.0], [0.0, -1.0]]), np.eye(2)).reshape([2] * 4)
   op = tf.convert_to_tensor(op)
   
-  
+ 
   
   for j in range(num_sites): 
    psi = np.zeros([2] * num_sites)
