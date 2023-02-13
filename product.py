@@ -297,7 +297,7 @@ def trotter_prepare_gates(H, step_size, num_sites, euclidean):
   eh_odd = [None] * num_sites
             
             
-  #for (n, eh) in enumerate(eH):
+  for (n, eh) in enumerate(eH):
     if n % 2 == 0:
       eh_even[n] = eh
     else:
