@@ -251,7 +251,7 @@ def test_evolve_trotter_euclidean(num_sites, phys_dim, graph):
 
    
     
-  
+ 
     
 def trotter_prepare_gates(H, step_size, num_sites, euclidean):
   """Prepare gates using 1st-order trotter decomposition.
