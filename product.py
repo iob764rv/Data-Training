@@ -17,6 +17,7 @@ def test_expval(num_sites):
     psi_vec[2**j] = 1.0
     psi = tf.convert_to_tensor(psi)
     
+    
 
    
     for i in range(num_sites):
