@@ -35,7 +35,7 @@ def binary_mera_energy(hamiltonian, state, isometry, disentangler):
    # rho = tensornetwork.Node(state, backend=backend)
 
     un_l = tensornetwork.Node(disentangler, backend=backend)
- #   un_l_con = tensornetwork.linalg.node_linalg.conj(un_l)
+    un_l_con = tensornetwork.linalg.node_linalg.conj(un_l)
 
   #  un_r = tensornetwork.Node(disentangler, backend=backend)
    # un_r_con = tensornetwork.linalg.node_linalg.conj(un_r)
