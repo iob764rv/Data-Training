@@ -20,7 +20,7 @@ def binary_mera_energy(hamiltonian, state, isometry, disentangler):
   Returns:
     The energy.
   """
-#  backend = "jax"
+  backend = "jax"
 
  # out = []
   #for dirn in ('left', 'right'):
