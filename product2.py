@@ -22,7 +22,7 @@ def binary_mera_energy(hamiltonian, state, isometry, disentangler):
   """
   backend = "jax"
 
- # out = []
+  out = []
   #for dirn in ('left', 'right'):
  ##  iso_c = tensornetwork.Node(isometry, backend=backend)
    # iso_r = tensornetwork.Node(isometry, backend=backend)
