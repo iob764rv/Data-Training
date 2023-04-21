@@ -48,7 +48,7 @@ def binary_mera_energy(hamiltonian, state, isometry, disentangler):
    # tensornetwork.connect(iso_l[1], un_l[2])
    # tensornetwork.connect(iso_c[0], un_l[3])
    # tensornetwork.connect(iso_c[1], un_r[2])
-   # tensornetwork.connect(iso_r[0], un_r[3])
+    tensornetwork.connect(iso_r[0], un_r[3])
     tensornetwork.connect(iso_r[1], iso_r_con[1])
 #
 #    if dirn == 'right':
