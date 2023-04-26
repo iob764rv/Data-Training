@@ -75,7 +75,7 @@ def binary_mera_energy(hamiltonian, state, isometry, disentangler):
 
     tensornetwork.connect(iso_l_con[2], rho[3])
     tensornetwork.connect(iso_c_con[2], rho[4])
-#    tensornetwork.connect(iso_r_con[2], rho[5])
+    tensornetwork.connect(iso_r_con[2], rho[5])
 
     # FIXME: Check that this is giving us a good path!
  #   out.append(
