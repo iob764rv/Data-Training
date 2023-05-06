@@ -262,7 +262,7 @@ def ham_ising():
 
 if __name__ == '__main__':
   # Starting from a very simple initial MERA, optimize for the critical Ising
-  # model.
+   model.
   h = ham_ising()
   s = np.reshape(np.eye(2**3), [2] * 6) / 2**3
   dis = np.reshape(np.eye(2**2), [2] * 4)
