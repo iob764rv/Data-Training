@@ -295,7 +295,7 @@ if __name__ == '__main__':
 #  for clause in clauses:
  #   if 0 in clause:
   #    raise ValueError("0's are not allowed in the clauses.")
-#  var_set = set()
+  var_set = set()
  # for clause in clauses:
   #  var_set |= {abs(x) for x in clause}
   #num_vars = max(var_set)
