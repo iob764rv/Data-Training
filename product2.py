@@ -341,7 +341,7 @@ if __name__ == '__main__':
     nodes: The set of nodes
   """
   var_edges1 = sat_tn(clauses)
-  #var_edges2 = sat_tn(clauses)
+  var_edges2 = sat_tn(clauses)
  # for edge1, edge2 in zip(var_edges1, var_edges2):
   #  edge1 ^ edge2
   # TODO(chaseriley): Support diconnected SAT graphs.
