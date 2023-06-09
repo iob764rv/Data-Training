@@ -300,7 +300,7 @@ if __name__ == '__main__':
   #  var_set |= {abs(x) for x in clause}
   #num_vars = max(var_set)
 #  var_nodes = []
- # var_edges = []
+  var_edges = []
 
   # Prepare the variable nodes.
 #  for _ in range(num_vars):
