@@ -299,7 +299,7 @@ if __name__ == '__main__':
  # for clause in clauses:
   #  var_set |= {abs(x) for x in clause}
   #num_vars = max(var_set)
-#  var_nodes = []
+  var_nodes = []
   var_edges = []
 
   # Prepare the variable nodes.
