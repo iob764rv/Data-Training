@@ -314,7 +314,7 @@ if __name__ == '__main__':
   #  clause_tensor = np.ones((2, 2, 2), dtype=np.int32)
    # clause_tensor[(-np.sign(a) + 1) // 2, (-np.sign(b) + 1) // 2,
     #              (-np.sign(c) + 1) // 2] = 0
-#    clause_node = tn.Node(clause_tensor)
+    clause_node = tn.Node(clause_tensor)
 
     # Connect the variable to the clause through a copy tensor.
  #   for i, var in enumerate(clause):
