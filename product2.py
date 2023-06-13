@@ -326,7 +326,7 @@ if __name__ == '__main__':
  # return var_edges
 
 
-#def sat_count_tn(clauses: List[Tuple[int, int, int]]) -> Set[tn.AbstractNode]:
+def sat_count_tn(clauses: List[Tuple[int, int, int]]) -> Set[tn.AbstractNode]:
   """Create a 3SAT Count TensorNetwork.
 
   After full contraction, the final node will be the count of all possible
