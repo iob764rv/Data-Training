@@ -297,7 +297,7 @@ if __name__ == '__main__':
       raise ValueError("0's are not allowed in the clauses.")
   var_set = set()
  # for clause in clauses:
-  #  var_set |= {abs(x) for x in clause}
+    var_set |= {abs(x) for x in clause}
   #num_vars = max(var_set)
   var_nodes = []
   var_edges = []
