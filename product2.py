@@ -345,4 +345,4 @@ def sat_count_tn(clauses: List[Tuple[int, int, int]]) -> Set[tn.AbstractNode]:
  # for edge1, edge2 in zip(var_edges1, var_edges2):
   #  edge1 ^ edge2
   # TODO(chaseriley): Support diconnected SAT graphs.
-#  return tn.reachable(var_edges1[0].node1)
+  return tn.reachable(var_edges1[0].node1)
