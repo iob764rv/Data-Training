@@ -298,7 +298,7 @@ if __name__ == '__main__':
   var_set = set()
  # for clause in clauses:
     var_set |= {abs(x) for x in clause}
-  #num_vars = max(var_set)
+  num_vars = max(var_set)
   var_nodes = []
   var_edges = []
 
