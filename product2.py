@@ -292,7 +292,7 @@ if __name__ == '__main__':
   Raises:
     ValueError: If any of the clauses have a 0 in them.
   """
-#  for clause in clauses:
+  for clause in clauses:
     if 0 in clause:
       raise ValueError("0's are not allowed in the clauses.")
   var_set = set()
