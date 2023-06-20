@@ -323,7 +323,7 @@ if __name__ == '__main__':
       var_edges[abs(var) - 1] ^ copy_tensor_node[1]
       var_edges[abs(var) - 1] = copy_tensor_node[2]
 
- # return var_edges
+  return var_edges
 
 
 def sat_count_tn(clauses: List[Tuple[int, int, int]]) -> Set[tn.AbstractNode]:
