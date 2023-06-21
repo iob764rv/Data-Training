@@ -303,7 +303,7 @@ if __name__ == '__main__':
   var_edges = []
 
   # Prepare the variable nodes.
-#  for _ in range(num_vars):
+  for _ in range(num_vars):
     new_node = tn.Node(np.ones(2, dtype=np.int32))
     var_nodes.append(new_node)
     var_edges.append(new_node[0])
