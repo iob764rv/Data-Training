@@ -317,7 +317,7 @@ if __name__ == '__main__':
     clause_node = tn.Node(clause_tensor)
 
     # Connect the variable to the clause through a copy tensor.
- #   for i, var in enumerate(clause):
+    for i, var in enumerate(clause):
       copy_tensor_node = tn.CopyNode(3, 2)
       clause_node[i] ^ copy_tensor_node[0]
       var_edges[abs(var) - 1] ^ copy_tensor_node[1]
