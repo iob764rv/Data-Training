@@ -309,8 +309,8 @@ if __name__ == '__main__':
     var_edges.append(new_node[0])
 
   # Create the nodes for each clause
-#  for clause in clauses:
- #   a, b, c, = clause
+  for clause in clauses:
+    a, b, c, = clause
     clause_tensor = np.ones((2, 2, 2), dtype=np.int32)
     clause_tensor[(-np.sign(a) + 1) // 2, (-np.sign(b) + 1) // 2,
                   (-np.sign(c) + 1) // 2] = 0
