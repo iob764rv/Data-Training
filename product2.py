@@ -213,7 +213,7 @@ def shift_ham(hamiltonian, shift=None):
   hmat = np.reshape(hamiltonian, (2**3, -1))
   if shift is None:
     shift = np.amax(np.linalg.eigh(hmat)[0])
-#  hmat -= shift * np.eye(2**3)
+  hmat -= shift * np.eye(2**3)
   return np.reshape(hmat, [2] * 6)
 
 
