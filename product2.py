@@ -349,7 +349,7 @@ def sat_count_tn(clauses: List[Tuple[int, int, int]]) -> Set[tn.AbstractNode]:
 
 
 def test_descend(random_tensors):
-#  h, s, iso, dis = random_tensors
+  h, s, iso, dis = random_tensors
   #s = simple_mera.descend(h, s, iso, dis)
 #  assert len(s.shape) == 6
  # D = s.shape[0]
