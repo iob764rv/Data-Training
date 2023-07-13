@@ -348,7 +348,7 @@ def sat_count_tn(clauses: List[Tuple[int, int, int]]) -> Set[tn.AbstractNode]:
   return tn.reachable(var_edges1[0].node1)
 
 
-#def test_descend(random_tensors):
+def test_descend(random_tensors):
 #  h, s, iso, dis = random_tensors
   #s = simple_mera.descend(h, s, iso, dis)
 #  assert len(s.shape) == 6
@@ -367,7 +367,7 @@ def sat_count_tn(clauses: List[Tuple[int, int, int]]) -> Set[tn.AbstractNode]:
  # D = h.shape[0]
   #hmat = np.reshape(h, [D**3] * 2)
 #  norm = np.linalg.norm(hmat - np.conj(np.transpose(hmat)))
- # assert np.isclose(norm, 0.0)
+  assert np.isclose(norm, 0.0)
 
 
 #def test_energy(wavelet_tensors):
