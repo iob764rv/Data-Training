@@ -8,7 +8,7 @@ from tensornetwork import contractors
 
 
 @jax.jit
-def binary_mera_energy(hamiltonian, state, isometry, disentangler):
+def binary_mera_energy(hamiltonian, state, isometry, disentangler): 
   """Computes the energy using a layer of uniform binary MERA.
   Args:
     hamiltonian: The hamiltonian (rank-6 tensor) defined at the bottom of the
