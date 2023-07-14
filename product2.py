@@ -434,7 +434,7 @@ def test_descend(random_tensors):
 
  # umat = np.real((np.sqrt(3) + 2) / 4 * np.kron(E, E) +
   #               (np.sqrt(3) - 2) / 4 * np.kron(Z, Z) +
-   #              1.j / 4 * np.kron(X, Y) + 1.j / 4 * np.kron(Y, X))
+                 1.j / 4 * np.kron(X, Y) + 1.j / 4 * np.kron(Y, X))
 
   #w = np.reshape(wmat_un, (D, D, D, D))[:, 0, :, :]
   #u = np.reshape(umat, (D, D, D, D))
