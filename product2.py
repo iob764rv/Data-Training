@@ -424,7 +424,7 @@ def test_descend(random_tensors):
 
   E = np.array([[1, 0], [0, 1]])
   X = np.array([[0, 1], [1, 0]])
-  #Y = np.array([[0, -1j], [1j, 0]])
+  Y = np.array([[0, -1j], [1j, 0]])
   #Z = np.array([[1, 0], [0, -1]])
 
 ###  wmat_un = np.real((np.sqrt(3) + np.sqrt(2)) / 4 * np.kron(E, E) +
