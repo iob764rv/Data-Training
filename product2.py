@@ -365,7 +365,7 @@ def test_descend(random_tensors):
   #h = simple_mera.ascend(h, s, iso, dis)
 #  assert len(h.shape) == 6
  # D = h.shape[0]
-  #hmat = np.reshape(h, [D**3] * 2)
+  hmat = np.reshape(h, [D**3] * 2)
   norm = np.linalg.norm(hmat - np.conj(np.transpose(hmat)))
   assert np.isclose(norm, 0.0)
 
