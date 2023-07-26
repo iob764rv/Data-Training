@@ -353,7 +353,7 @@ def test_descend(random_tensors):
   s = simple_mera.descend(h, s, iso, dis)
   assert len(s.shape) == 6
   D = s.shape[0]
-  #smat = np.reshape(s, [D**3] * 2)
+  smat = np.reshape(s, [D**3] * 2)
 #  assert np.isclose(np.trace(smat), 1.0)
  # assert np.isclose(np.linalg.norm(smat - np.conj(np.transpose(smat))), 0.0)
   #spec, _ = np.linalg.eigh(smat)
