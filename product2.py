@@ -440,6 +440,6 @@ def test_descend(random_tensors):
   #u = np.reshape(umat, (D, D, D, D))
 
   #w = np.transpose(w, [1, 2, 0])
-  #u = np.transpose(u, [2, 3, 0, 1])
+  u = np.transpose(u, [2, 3, 0, 1])
 
   #return tuple(x.astype(np.complex128) for x in (h, w, u))
