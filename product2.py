@@ -432,7 +432,7 @@ def test_descend(random_tensors):
                     (1 + np.sqrt(2)) / 4 * np.kron(X, Y) + 1.j *
                     (1 - np.sqrt(2)) / 4 * np.kron(Y, X))
 
- # umat = np.real((np.sqrt(3) + 2) / 4 * np.kron(E, E) +
+  umat = np.real((np.sqrt(3) + 2) / 4 * np.kron(E, E) +
                  (np.sqrt(3) - 2) / 4 * np.kron(Z, Z) +
                  1.j / 4 * np.kron(X, Y) + 1.j / 4 * np.kron(Y, X))
 
