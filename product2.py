@@ -391,7 +391,7 @@ def test_descend(random_tensors):
 #  assert en < -1.25
 
 
-#@pytest.fixture(params=[2, 3])
+@pytest.fixture(params=[2, 3])
 #def random_tensors(request):
  # D = request.param
   #key = jax.random.PRNGKey(0)
