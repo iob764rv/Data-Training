@@ -436,7 +436,7 @@ def test_descend(random_tensors):
                  (np.sqrt(3) - 2) / 4 * np.kron(Z, Z) +
                  1.j / 4 * np.kron(X, Y) + 1.j / 4 * np.kron(Y, X))
 
-  #w = np.reshape(wmat_un, (D, D, D, D))[:, 0, :, :]
+  w = np.reshape(wmat_un, (D, D, D, D))[:, 0, :, :]
   u = np.reshape(umat, (D, D, D, D))
 
   w = np.transpose(w, [1, 2, 0])
