@@ -420,7 +420,7 @@ def test_descend(random_tensors):
   From Evenbly & White, Phys. Rev. Lett. 116, 140403 (2016).
   """
   D = 2
-  #h = simple_mera.ham_ising()
+  h = simple_mera.ham_ising()
 
   E = np.array([[1, 0], [0, 1]])
   X = np.array([[0, 1], [1, 0]])
