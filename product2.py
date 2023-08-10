@@ -403,7 +403,7 @@ def test_descend(random_tensors):
  # s = jax.random.normal(key, shape=[D**3] * 2)
   #s = s @ np.conj(np.transpose(s))
   #s /= np.trace(s)
- # s = np.reshape(s, [D] * 6)
+  s = np.reshape(s, [D] * 6)
 
   #a = jax.random.normal(key, shape=[D**2] * 2)
   #u, _, vh = np.linalg.svd(a)
