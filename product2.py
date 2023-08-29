@@ -371,7 +371,7 @@ def test_descend(random_tensors):
 
 
 #def test_energy(wavelet_tensors):
- # h, iso, dis = wavelet_tensors
+  h, iso, dis = wavelet_tensors
   #s = np.reshape(np.eye(2**3) / 2**3, [2] * 6)
 #  for _ in range(20):
  #   s = simple_mera.descend(h, s, iso, dis)
