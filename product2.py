@@ -3,7 +3,7 @@ import jax.config
 jax.config.update("jax_enable_x64", True)
 import jax.numpy as np
 import tensornetwork
-import tensornetwork.linalg.node_linalg
+#import tensornetwork.linalg.node_linalg
 from tensornetwork import contractors
 
 
