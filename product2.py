@@ -360,7 +360,7 @@ def test_descend(random_tensors):
   #assert np.alltrue(spec >= 0.0)
 
 
-#def test_ascend(random_tensors):
+def test_ascend(random_tensors):
   h, s, iso, dis = random_tensors
   h = simple_mera.ascend(h, s, iso, dis)
   assert len(h.shape) == 6
