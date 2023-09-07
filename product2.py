@@ -370,7 +370,7 @@ def test_ascend(random_tensors):
   assert np.isclose(norm, 0.0)
 
 
-#def test_energy(wavelet_tensors):
+def test_energy(wavelet_tensors):
   h, iso, dis = wavelet_tensors
   s = np.reshape(np.eye(2**3) / 2**3, [2] * 6)
   for _ in range(20):
@@ -378,7 +378,7 @@ def test_ascend(random_tensors):
   #en = np.trace(np.reshape(s, [2**3, -1]) @ np.reshape(h, [2**3, -1]))
 #  assert np.isclose(en, -1.242, rtol=1e-3, atol=1e-3)
  # en = simple_mera.binary_mera_energy(h, s, iso, dis)
-  #assert np.isclose(en, -1.242, rtol=1e-3, atol=1e-3)
+  assert np.isclose(en, -1.242, rtol=1e-3, atol=1e-3)
 
 
 #def test_opt(wavelet_tensors):
