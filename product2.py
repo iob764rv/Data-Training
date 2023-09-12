@@ -397,7 +397,7 @@ def test_opt(wavelet_tensors):
   #key = jax.random.PRNGKey(0)
 
  # h = jax.random.normal(key, shape=[D**3] * 2)
- # h = 0.5 * (h + np.conj(np.transpose(h)))
+  h = 0.5 * (h + np.conj(np.transpose(h)))
  # h = np.reshape(h, [D] * 6)
 
  # s = jax.random.normal(key, shape=[D**3] * 2)
