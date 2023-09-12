@@ -407,7 +407,7 @@ def test_opt(wavelet_tensors):
 
   #a = jax.random.normal(key, shape=[D**2] * 2)
   #u, _, vh = np.linalg.svd(a)
- # dis = np.reshape(u, [D] * 4)
+  dis = np.reshape(u, [D] * 4)
   iso = np.reshape(vh, [D] * 4)[:, :, :, 0]
 
   #return tuple(x.astype(np.complex128) for x in (h, s, iso, dis))
