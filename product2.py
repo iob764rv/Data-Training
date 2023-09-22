@@ -405,7 +405,7 @@ def test_opt(wavelet_tensors):
   s /= np.trace(s)
   s = np.reshape(s, [D] * 6)
 
-  #a = jax.random.normal(key, shape=[D**2] * 2)
+  a = jax.random.normal(key, shape=[D**2] * 2)
   u, _, vh = np.linalg.svd(a)
   dis = np.reshape(u, [D] * 4)
   iso = np.reshape(vh, [D] * 4)[:, :, :, 0]
