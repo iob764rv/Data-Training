@@ -414,7 +414,7 @@ def test_opt(wavelet_tensors):
 
 
 #@pytest.fixture
-#def wavelet_tensors(request):
+def wavelet_tensors(request):
   """Returns the Hamiltonian and MERA tensors for the D=2 wavelet MERA.
 
   From Evenbly & White, Phys. Rev. Lett. 116, 140403 (2016).
