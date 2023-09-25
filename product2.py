@@ -377,7 +377,7 @@ def test_energy(wavelet_tensors):
     s = simple_mera.descend(h, s, iso, dis)
   en = np.trace(np.reshape(s, [2**3, -1]) @ np.reshape(h, [2**3, -1]))
   assert np.isclose(en, -1.242, rtol=1e-3, atol=1e-3)
- # en = simple_mera.binary_mera_energy(h, s, iso, dis)
+  en = simple_mera.binary_mera_energy(h, s, iso, dis)
   assert np.isclose(en, -1.242, rtol=1e-3, atol=1e-3)
 
 
