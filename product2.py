@@ -392,7 +392,7 @@ def test_opt(wavelet_tensors):
 
 
 @pytest.fixture(params=[2, 3])
-#def random_tensors(request):
+def random_tensors(request):
  # D = request.param
   #key = jax.random.PRNGKey(0)
 
