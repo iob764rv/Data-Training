@@ -437,9 +437,9 @@ def wavelet_tensors(request):
                  1.j / 4 * np.kron(X, Y) + 1.j / 4 * np.kron(Y, X))
 
   w = np.reshape(wmat_un, (D, D, D, D))[:, 0, :, :]
-  u = np.reshape(umat, (D, D, D, D))
+#  u = np.reshape(umat, (D, D, D, D))
 
-  w = np.transpose(w, [1, 2, 0])
+ # w = np.transpose(w, [1, 2, 0])
   u = np.transpose(u, [2, 3, 0, 1])
 
   return tuple(x.astype(np.complex128) for x in (h, w, u))
