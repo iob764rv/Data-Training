@@ -444,3 +444,22 @@ def wavelet_tensors(request):
   u = np.transpose(u, [2, 3, 0, 1])
 
   return tuple(x.astype(np.complex128) for x in (h, w, u))
+
+
+
+
+#def test_sanity_check():
+ # nodes = sat_tensornetwork.sat_count_tn([
+  #    (1, 2, 3),
+  #])
+  #count = tensornetwork.contractors.greedy(nodes).tensor
+  #assert count == 7
+
+
+#def test_dual_clauses():
+ # nodes = sat_tensornetwork.sat_count_tn([
+  #    (1, 2, 3),
+   #   (1, -2, 3),
+  #])
+  #count = tensornetwork.contractors.greedy(nodes).tensor
+  #assert count == 6
