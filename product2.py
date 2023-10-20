@@ -5,6 +5,7 @@ import jax.numpy as np
 import tensornetwork
 import tensornetwork.linalg.node_linalg
 from tensornetwork import contractors
+from examples.sat import sat_tensornetwork
 
 
 @jax.jit
