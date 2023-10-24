@@ -411,7 +411,7 @@ def random_tensors(request):
   dis = np.reshape(u, [D] * 4)
   iso = np.reshape(vh, [D] * 4)[:, :, :, 0]
 
-  #return tuple(x.astype(np.complex128) for x in (h, s, iso, dis))
+  return tuple(x.astype(np.complex128) for x in (h, s, iso, dis))
 
 
 #@pytest.fixture
