@@ -452,7 +452,7 @@ def test_sanity_check():
   nodes = sat_tensornetwork.sat_count_tn([
       (1, 2, 3),
   ])
-  #\count = tensornetwork.contractors.greedy(nodes).tensor
+  #count = tensornetwork.contractors.greedy(nodes).tensor
   assert count == 7
 
 
