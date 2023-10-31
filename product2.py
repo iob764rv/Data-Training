@@ -395,7 +395,7 @@ def test_opt(wavelet_tensors):
 @pytest.fixture(params=[2, 3])
 def random_tensors(request):
   D = request.param
-  #key = jax.random.PRNGKey(0)
+  key = jax.random.PRNGKey(0)
 
   h = jax.random.normal(key, shape=[D**3] * 2)
   h = 0.5 * (h + np.conj(np.transpose(h)))
