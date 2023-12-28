@@ -446,7 +446,6 @@ def wavelet_tensors(request):
   return tuple(x.astype(np.complex128) for x in (h, w, u))
 
 
-
 def test_sanity_check():
   nodes = sat_tensornetwork.sat_count_tn([
       (1, 2, 3),
