@@ -447,7 +447,6 @@ def wavelet_tensors(request):
 
 
 
-
 def test_sanity_check():
   nodes = sat_tensornetwork.sat_count_tn([
       (1, 2, 3),
