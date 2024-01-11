@@ -456,7 +456,7 @@ def test_sanity_check():
   ])
   count = tensornetwork.contractors.greedy(nodes).tensor
   assert count == 7
-
+  
 
 def test_dual_clauses():
   nodes = sat_tensornetwork.sat_count_tn([
