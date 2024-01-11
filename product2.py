@@ -463,5 +463,6 @@ def test_dual_clauses():
       (1, 2, 3),
       (1, -2, 3),
   ])
+  
   count = tensornetwork.contractors.greedy(nodes).tensor
   assert count == 6
