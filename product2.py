@@ -259,7 +259,7 @@ def ham_ising():
   (2016).
   """
 #  E = np.array([[1, 0], [0, 1]])
- # X = np.array([[0, 1], [1, 0]])
+  X = np.array([[0, 1], [1, 0]])
   Z = np.array([[1, 0], [0, -1]])
   #hmat = np.kron(X, np.kron(Z, X))
   hmat -= 0.5 * (np.kron(np.kron(X, X), E) + np.kron(E, np.kron(X, X)))
