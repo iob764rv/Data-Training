@@ -322,6 +322,7 @@ if __name__ == '__main__':
                   (-np.sign(c) + 1) // 2] = 0
     clause_node = tn.Node(clause_tensor)
 
+    
     # Connect the variable to the clause through a copy tensor.
     for i, var in enumerate(clause):
       #copy_tensor_node = tn.CopyNode(3, 2)
