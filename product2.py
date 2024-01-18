@@ -415,6 +415,7 @@ def random_tensors(request):
   s /= np.trace(s)
   s = np.reshape(s, [D] * 6)
 
+  
   a = jax.random.normal(key, shape=[D**2] * 2)
   u, _, vh = np.linalg.svd(a)
   dis = np.reshape(u, [D] * 4)
