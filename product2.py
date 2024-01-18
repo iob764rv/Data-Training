@@ -167,6 +167,7 @@ def update_iso(hamiltonian, state, isometry, disentangler):
       nenv, [nenv["l"], nenv["r"]], [nenv["t"]],
       left_edge_name="s1",
       right_edge_name="s2")
+
   
   nu["s1"].disconnect()
   nv["s2"].disconnect()
